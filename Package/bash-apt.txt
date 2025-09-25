@@ -1,0 +1,33 @@
+// 日本語関連
+manpages-ja
+manpages-ja-dev
+fcitx5-mozc
+// パッケージマネージャー
+flatpak
+gnome-software-plugin-flatpak
+// シェル //
+zsh
+// エディタ //
+neovim
+micro
+// 雑多 //
+git
+fd-find
+ripgrep
+poppler-utils
+poppler-data
+imagemagick
+ffmpeg
+yt-dlp
+fzf
+zoxide
+7zip
+clang
+mediainfo
+build-essential
+pkg-config
+libssl-dev
+libasound2-dev
+// フォント //
+fonts-noto-cjk
+fonts-noto-color-emoji

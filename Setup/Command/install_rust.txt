@@ -1,0 +1,26 @@
+// mise・Rust //
+mise use -g rust
+
+// cargo package //
+
+// cargo package manager //
+cargo install --locked cargo-binstall
+cargo install --locked cargo-update
+
+// cargo binstall //
+cargo binstall -y cargo-generate
+cargo binstall -y cargo-about
+cargo binstall -y cargo-license
+cargo binstall -y bat
+cargo binstall -y mcat
+cargo binstall -y diffx
+cargo binstall -y lsd
+cargo binstall -y genact
+cargo binstall -y yazi-fm yazi-cli
+cargo binstall -y starship
+cargo binstall -y sheldon
+// cargo git //
+cargo install --git https://github.com/ElevenJune/serenIT.git
+// cargo my //
+cargo binstall -y download_mover
+cargo binstall -y Neiro

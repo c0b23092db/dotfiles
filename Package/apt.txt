@@ -1,0 +1,10 @@
+Zsh,zsh
+curl,curl
+file,file
+gcc,build-essential
+pkg-config
+libssl-dev
+libasound2-dev
+// フォント //
+fonts-noto-cjk
+fonts-noto-color-emoji

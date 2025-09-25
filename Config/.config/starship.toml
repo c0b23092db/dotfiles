@@ -1,0 +1,17 @@
+add_newline = false
+
+format = """
+$username\
+$hostname\
+$directory\
+$character"""
+
+[username]
+format = "[$user]($style):"
+
+[directory]
+style = "cyan"
+
+[character]
+success_symbol = "[>](bold green)"
+error_symbol = "[>](bold red)"

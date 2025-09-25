@@ -1,0 +1,17 @@
+NAME,INSTALL,winget,apt
+Neovim,all,Neovim.Neovim,neovim
+Micro,all,zyedidia.micro,micro
+git,all,Git.Git,git
+fastfetch,all,fastfetch,fastfetch
+fd-find,all,sharkdp.fd,fd-find
+ripgrep,all,BurntSushi.ripgrep.MSVC,ripgrep
+Poppler,winget,oschwartz10612.Poppler,poppler
+ImageMagick,all,ImageMagick.ImageMagick,imagemagick
+FFmpeg,all,Gyan.FFmpeg,ffmpeg
+yt-dlp,all,yt-dlp.yt-dlp,yt-dlp
+fzf,all,junegunn.fzf,fzf
+zoxide,all,ajeetdsouza.zoxide,zoxide
+Lazygit,winget,JesseDuffield.lazygit,lazygit
+7zip,apt,7zip.7zip,7zip
+clang,apt,LLVM.LLVM,clang
+MediaInfo,x,MediaArea.MediaInfo,mediainfo

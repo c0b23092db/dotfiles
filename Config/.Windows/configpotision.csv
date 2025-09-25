@@ -1,0 +1,10 @@
+PATH,CONFIG_PATH,TARGET_APPDATA
+wezterm,Config,.config
+mise,Config,.config
+micro,Config,.config
+nvim,Config,Local
+Code,Config,Roaming
+mpv,Config,Roaming
+yazi,Config,Roaming
+serenIT,Config,.config
+Microsoft.PowerShell_profile.ps1,OS,Documents\PowerShell

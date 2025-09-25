@@ -1,0 +1,4 @@
+mise use -g uv
+mise use -g java@openjdk-21
+// mise use -g golang
+// mise use -g zig

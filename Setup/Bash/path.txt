@@ -1,0 +1,4 @@
+~/.local/bin
+~/.local/share/mise/shims
+~/.cargo/bin
+~/.local/share/mise/installs/go/latest/bin
