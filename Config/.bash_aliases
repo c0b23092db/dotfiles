@@ -29,7 +29,7 @@ alias la='ls -A'
 alias ll='ls -al'
 alias v='nvim'
 alias m='micro'
-alias auu='sudo apt -y update;sudo apt -y upgrade'
+alias auu='sudo apt -y update;sudo apt upgrade -y'
 
 ##### 関数 #####
 function y() {

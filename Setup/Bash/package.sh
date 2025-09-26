@@ -25,7 +25,7 @@ fi
 info "===== パッケージマネージャーの更新 ====="
 if [ "$package_manager" = "apt" ] ; then
     spinner_load "システムのアップデート" "sudo apt --yes update"
-    spinner_load "システムのアップグレード" "sudo apt --yes upgrade"
+    spinner_load "システムのアップグレード" "sudo apt upgrade --yes"
 elif [ "$package_manager" = "pacman" ] ; then
     spinner_load "システムのアップデート" "sudo pacman -Syu"
 else

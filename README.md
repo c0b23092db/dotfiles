@@ -26,7 +26,8 @@
 
 ### 🗨️ さぽーと 💭
 - Windows 11 Pro (?)
-- Linux Mint (?)
+- Ubuntu
+- Linux Mint
 - Docker
 
 ### 📦 ぱっけーじ 📦
@@ -92,7 +93,7 @@ bash install.sh
 - `-debug` : デバッグ情報を表示
 - `-help` : ヘルプを表示
 
-もしくは、**対応するディストリビューションを直接起動**してください。
+もしくは、**対応するディストリビューションもしくはベースとなったディストリビューションを直接起動**してください。
 
 ```bash
 bash Setup/Distribution/Ubuntu.sh

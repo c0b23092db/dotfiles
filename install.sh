@@ -3,11 +3,11 @@
 clear
 source ./Setup/Bash/common.sh
 
-distribution=$(get_distribution)
+distribution=$(new_get_distribution)
 if [ "$distribution" = "Ubuntu" ]; then
-    source ./Setup/Distribution/Ubuntu.sh
+    source ./Setup/Distribution/Based_Ubuntu.sh
 elif [ "$distribution" = "Linux Mint" ]; then
-    source ./Setup/Distribution/Linux_Mint.sh
+    source ./Setup/Distribution/Based_Ubuntu.sh
 elif [ "$distribution" = "Unknown" ]; then
     error "不明なディストリビューション: $distribution"
 else
