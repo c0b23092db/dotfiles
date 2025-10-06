@@ -3,7 +3,7 @@
 # ***どっとふぁいる***
 **作成途中のプロジェクト**
 
-**Windows(winget)** / **Ubuntu(apt)**
+**Windows(winget)** / **Linux Mint(apt)**
 
 </div>
 
@@ -25,10 +25,10 @@
 ## 💻 いんふぉめーしょん 💻
 
 ### 🗨️ さぽーと 💭
-- Windows 11 Pro (?)
-- Ubuntu
-- Linux Mint
-- Docker
+- [ ] Windows 11 Pro
+- [x] Ubuntu
+- [x] Linux Mint
+- [x] Docker
 
 ### 📦 ぱっけーじ 📦
 
