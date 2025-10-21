@@ -41,3 +41,4 @@ Setup/Python/lib/__pycache__
 !Resource
 Resource/*
 !Resource/github
+!Resource/URL
