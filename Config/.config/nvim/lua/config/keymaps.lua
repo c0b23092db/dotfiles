@@ -22,6 +22,9 @@ vim.keymap.set('n','gn','<cmd>lua vim.lsp.buf.rename()<CR>')
 vim.keymap.set('n', 'p', 'p`]', { desc = 'Paste and move to the end' })
 vim.keymap.set('n', 'P', 'P`]', { desc = 'Paste and move to the end' })
 
+-- [[ プラグインの影響 ]] --
+-- vim.keymap.set("i", "<CR>","\n", { expr = true, noremap = true, silent = true })
+
 --[[ コントロールキー・シフトキー ]] --
 
 -- ノーマルモードで Ctrl + 矢印キーで単語間を移動
@@ -49,5 +52,9 @@ vim.keymap.set("i", "<C-z>", "<C-o>u", { noremap = true, silent = true }) -- 挿
 vim.keymap.set("v", "<C-c>", "y`]", { noremap = true, silent = true })
 
 -- Ctrl + vで貼り付け
-vim.keymap.set("n", "<C-v>", "p`]", { noremap = true, silent = true })
+-- vim.keymap.set("n", "<C-v>", "p`]", { noremap = true, silent = true })
 vim.keymap.set("i", "<C-v>", "<esc>p`]a", { noremap = true, silent = true }) -- 挿入モード対応
+
+--[[ マウス操作 ]]--
+vim.keymap.set({'n','v','i','c'}, '<ScrollWheelLeft>', '<ScrollWheelRight>')
+vim.keymap.set({'n','v','i','c'}, '<ScrollWheelRight>', '<ScrollWheelLeft>')

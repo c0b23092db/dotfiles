@@ -3,5 +3,4 @@ local lsp_names = {
   'lua-language-server',
   'rust-analyzer',
 }
-
 vim.lsp.enable(lsp_names)

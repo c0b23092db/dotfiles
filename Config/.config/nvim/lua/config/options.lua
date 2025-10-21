@@ -2,21 +2,26 @@
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 -- Add any additional options here
 
+--[[ 文字コード ]]--
+vim.scriptencoding = "utf-8"
+vim.opt.encoding = "utf-8" -- Neovimのデフォルト文字コード
+vim.opt.fileencoding = "utf-8" -- ファイルの保存時
+
 --[[ Neovim設定 ]]--
 vim.opt.mouse = "a"  -- マウス操作を有効化
 vim.opt.clipboard = 'unnamedplus' -- クリップボードの変更
 vim.opt.backup = false -- バックアップの設定
 
 --[[ エンコーディング設定 ]]--
-vim.scriptencoding = "utf-8"
-vim.opt.encoding = "utf-8" -- Neovimのデフォルト文字コード
-vim.opt.fileencoding = "utf-8" -- ファイルの保存時
 vim.opt.fileencodings = "utf-8,utf-16,sjis," -- ファイル読み込み時推定
 vim.opt.list = true -- インデントの表示
 vim.opt.listchars = { -- インデントの文字
   space = "-",
   tab = "▎ ",
 }
+
+-- スクロールの挙動変更
+vim.g.snacks_animate = false
 
 --[[ 表示設定 ]]--
 vim.opt.cursorline = true -- カーソル行のハイライト
@@ -36,7 +41,7 @@ vim.opt.hlsearch = true  -- 検索結果をハイライト
 vim.opt.helplang = "ja"  -- ヘルプの言語を日本語に設定
 
 -- blink
-vim.g.lazyvim_blink_main = false
+vim.g.lazyvim_blink_main = true
 
 -- Python
-vim.g.python3_host_prog = ""
+vim.g.python3_host_prog = "C:\\Users\\LAlter\\Documents\\.venv\\3.12.5\\Scripts\\python.exe"

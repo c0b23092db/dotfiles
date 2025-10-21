@@ -1,9 +1,8 @@
 {
-    //* Visual Studio Code きほんせってい *//
+    //* Windsurf きほんせってい *//
 
-    // Visual Studio Code 設定
-    "workbench.startupEditor": "welcomePageInEmptyWorkbench",
-    "update.showReleaseNotes": true,
+    // Windsurf 設定
+    "workbench.startupEditor": "none",
     "explorer.confirmDelete": false,
     "explorer.confirmPasteNative": false,
     "explorer.confirmDragAndDrop": false,
@@ -17,11 +16,11 @@
     "terminal.integrated.enableVisualBell": true,
     "terminal.integrated.stickyScroll.enabled": true,
 
-    // Visual Studio Code 画面 設定
+    // Windsurf 画面 設定
     "window.zoomLevel": -1,
     "chat.commandCenter.enabled": false,
     "workbench.navigationControl.enabled": false,
-    "workbench.colorTheme": "Default Dark+",
+    "workbench.colorTheme": "Default Dark Modern",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.colorCustomizations": {
         /* エディタ */
@@ -44,18 +43,19 @@
         "editorBracketPairGuide.activeBackground3":"#FFFFFF",
         "editorBracketPairGuide.activeBackground4":"#FFFFFF",
         "editorBracketPairGuide.activeBackground5":"#FFFFFF",
-        "editorBracketPairGuide.activeBackground6":"#FFFFFF"
+        "editorBracketPairGuide.activeBackground6":"#FFFFFF",
     },
 
     // フォント 設定
     "editor.fontFamily":"'UDEV Gothic JPDOC', 'Cascadia Mono', Consolas, 'Courier New', monospace",
-    "editor.fontSize":16,
+    "editor.fontSize":17,
     "debug.console.fontSize":16,
     "terminal.integrated.fontSize":16,
     "editor.letterSpacing": -0.1,
 
     // ディレクトリツリー 設定
     "explorer.autoReveal": false,
+    "explorer.compactFolders": false,
     "explorer.autoOpenDroppedFile": false,
     "explorer.fileNesting.enabled": true,
     "explorer.fileNesting.expand": false,
@@ -90,14 +90,10 @@
     // C 設定
     "[c]": {
         "editor.insertSpaces": false,
-        "editor.tabSize": 4
+        "editor.tabSize": 4,
     },
 
-    // D言語
-    "d.servedPath": "~\\AppData\\Roaming\\code-d\\bin\\serve-d.exe",
-
     // Python 設定
-    "python.venvPath": "~\\Documents\\.venv",
     "[python]": {
         "editor.tabSize": 4,
         "editor.formatOnType": true
@@ -105,14 +101,14 @@
 
     // Rust 設定
     "[rust]": {
-        "editor.tabSize": 4
+        "editor.tabSize": 4,
     },
     "rust-analyzer.check.command": "clippy",
     "rust-analyzer.check.extraArgs": [
         "--",
         "-A",
         "clippy::needless_return",
-        "needless_return_with_question_mark"
+        "needless_return_with_question_mark",
     ],
 
     // Markdown 設定
@@ -120,15 +116,14 @@
 
     //* 拡張機能設定 *//
 
-    // Codeium 設定
-    "codeium.enableCodeLens": "hide_x",
-
-    // input-sequence 設定
-    "sequence.replaceSelection": true,
+    // material-icon-theme 設定
+    "material-icon-theme.folders.color": "#42a5f5",
 
     // Git 設定
     "git.confirmSync":false,
+    "git.ignoreRebaseWarning": true,
     "diffEditor.hideUnchangedRegions.enabled": true,
+    "git.openRepositoryInParentFolders": "never",
 
     // markdown 設定
     "markdown.extension.toc.levels": "2..6",
@@ -146,10 +141,12 @@
         "MD032":false,
         "MD033":false,
         "MD034":false,
+        "MD036":false,
         "MD040":false,
+        "MD041":false,
         "MD047":false,
         "MD049":false,
-        "MD050":false
+        "MD050":false,
     },
 
     // markdown-preview-enhanced 設定
@@ -157,11 +154,10 @@
     "markdown-preview-enhanced.previewTheme": "github-dark.css",
     "markdown-preview-enhanced.codeBlockTheme": "github-dark.css",
 
-    // markdown-pdf 設定
-    "markdown-pdf.breaks": true,
-
     // Godot 設定
     "godotTools.editorPath.godot4": "~\\Documents\\Software\\Godot_v4.5-stable_mono_win64\\Godot_v4.5-stable_mono_win64.exe",
     "godotTools.lsp.serverPort": 6005,
+
+    // その他
 
 }

@@ -10,7 +10,4 @@
     "ft:c": {
         "tabstospaces": false
     },
-    "ft:lua": {
-        "tabsize": 2
-    }
 }

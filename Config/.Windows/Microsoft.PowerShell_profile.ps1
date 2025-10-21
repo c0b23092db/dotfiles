@@ -1,9 +1,9 @@
 Import-Module Terminal-Icons
 $WarningPreference = "SilentlyContinue" # Warningの非表示
 
+Set-PSReadLineOption -PredictionViewStyle ListView
 Set-PSReadLineOption -PredictionSource HistoryAndPlugin
 Set-PSReadlineOption -HistoryNoDuplicates
-Set-PSReadLineOption -PredictionViewStyle ListView
 Set-PSReadLineOption -WordDelimiters ";:,.[]{}()/\|^&*-=+'<>「」（）『』『』［］、，。"
 
 function y {
@@ -16,6 +16,8 @@ function y {
     Remove-Item -Path $tmp
 }
 function cl { cl.exe /source-charset:utf-8 @args}
+function dcp { docker cp . $args[0]:/root/$args[1] }
+function za { zoxide add . }
 Invoke-Expression (& { (zoxide init powershell | Out-String) })
 Set-Alias pkg-config pkgconf
 Set-Alias v nvim
@@ -27,7 +29,7 @@ Set-Alias open Start-Process
 function prompt {
     $currentDir = (Get-Location).Path `
         -replace [regex]::Escape($HOME), "~" `
-        -replace ".*Learn_University", "🏫"
+        -replace ".*Learn_University", "🏫 "
     $(if (Test-Path variable:/PSDebugContext) { '[DBG]: ' }
       else {  }) + $currentDir +
         $(if ($NestedPromptLevel -ge 1) { '>>' }) + '> '

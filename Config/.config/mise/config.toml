@@ -1,5 +1,5 @@
 [tools]
-java = "openjdk-21"
-rust = "latest"
 uv = "latest"
-# go = "latest"
+rust = "latest"
+java = "openjdk-21"
+go = "latest"

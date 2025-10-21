@@ -4,8 +4,6 @@ return {
   event = {"BufReadPost","BufNewFile"},
 
   main = "ibl",
-  ---@module "ibl"
-  ---@type ibl.config
   config = function()
     local highlight = {
       "Red",
@@ -31,7 +29,8 @@ return {
     require("ibl").setup {
       indent = { 
         char = "▏",
-        highlight = highlight },
+        highlight = highlight,
+      },
       scope = { highlight = "Write" },
     }
   end,

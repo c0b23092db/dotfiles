@@ -4,6 +4,7 @@ mise,Config,.config
 micro,Config,.config
 nvim,Config,Local
 Code,Config,Roaming
+Windsurf,Config,Roaming
 mpv,Config,Roaming
 yazi,Config,Roaming
 serenIT,Config,.config

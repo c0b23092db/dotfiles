@@ -9,7 +9,7 @@
 
 ## ❄ うぇるかむ ❄
 
-![Wezterm](./Resource/github/windows_wezterm.png)
+![Wezterm_and_Docker](./Resource/github/windows_wezterm.png)
 
 ## ☐️ TODO ☑
 - [x] Windowsのインストーラーを完成させる
@@ -120,7 +120,7 @@ bash Setup/Distribution/Ubuntu.sh
 ```lua:font.lua
     "UDEV Gothic JPDOC",{weight="Regular",stretch="Normal",italic=false}
 ```
-その他のフォントは[URL_Font_standard-sub.txt](./Resource/URL/URL_Font_standard-sub.txt)に掲載してます。
+その他のフォントは[URL_Font.csv](./Resource/URL/URL_Font.csv)に掲載してます。
 
 ## ⚙️ セットアップファイルについて ⚙️
 - [Setup](Setup/README.md)

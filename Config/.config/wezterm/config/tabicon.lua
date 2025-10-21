@@ -20,6 +20,33 @@ local function get_tab_icon(tab)
     title = "WSL"
     icon = wezterm.nerdfonts.cod_terminal_linux
     icon_color = "#e95420"
+  elseif tab == "docker" then
+    title = "Docker"
+    icon = wezterm.nerdfonts.dev_docker
+    icon_color = "#2b99ee"
+-- Program
+  elseif tab == "node" then
+    title = "Node"
+    icon = wezterm.nerdfonts.dev_nodejs
+    icon_color = "#8fc708"
+  elseif tab == "rustup" then
+    title = "Rustup"
+    icon = wezterm.nerdfonts.dev_rust
+    icon_color = "#080808"
+  elseif tab == "cargo" then
+    title = "Cargo"
+    icon = wezterm.nerdfonts.md_food_takeout_box
+    icon_color = "#ebb142"
+-- RUN
+  elseif tab == "winget" then
+    title = "Winget"
+    icon = wezterm.nerdfonts.md_download_box
+    icon_color = "#d6ab6c"
+  elseif tab == "git" then
+    title = "Git"
+    icon = wezterm.nerdfonts.md_git
+    icon_color = "#f05539"
+-- TUI
   elseif tab == "btm" then
     title = "bottom"
     icon = wezterm.nerdfonts.cod_circuit_board
@@ -36,6 +63,10 @@ local function get_tab_icon(tab)
     title = "Lazygit"
     icon = wezterm.nerdfonts.dev_git
     icon_color = "#25d580"
+  elseif tab == "lazydocker" then
+    title = "LazyDocker"
+    icon = wezterm.nerdfonts.dev_docker
+    icon_color = "#2b99ee"
 -- CLI Editer
   elseif tab == "edit" then
     title = "edit"

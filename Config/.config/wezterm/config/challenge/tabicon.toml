@@ -1,0 +1,87 @@
+# Wezterm Tab Icons
+
+[pwsh]
+title = "PowerShell 7 (x64)"
+icon = "md_console_line"
+icon_color = "#50A0F0"
+
+[cmd]
+title = "CommandPrompt"
+icon = "md_console_line"
+icon_color = "#101010"
+
+[wslhost]
+title = "WSL"
+icon = "cod_terminal_linux"
+icon_color = "#e95420"
+
+[btm]
+title = "bottom"
+icon = "cod_circuit_board"
+icon_color = "#F0F0F0"
+
+[yazi]
+title = "yazi"
+icon = "cod_folder"
+icon_color = "#F9F900"
+
+[broot]
+title = "broot"
+icon = "cod_folder"
+icon_color = "#909000"
+
+[lazygit]
+title = "Lazygit"
+icon = "dev_git"
+icon_color = "#25d580"
+
+[docker]
+title = "Docker"
+icon = "dev_docker"
+icon_color = "#2b99ee"
+
+[edit]
+title = "edit"
+icon = "fa_edit"
+icon_color = "#66d88b"
+
+[micro]
+title = "micro"
+icon = "md_alpha_m_box"
+icon_color = "#2e3192"
+
+[nvim]
+title = "Neovim"
+icon = "custom_neovim"
+icon_color = "#30c030"
+
+[language_server_windows_x64]
+title = "Neovim"
+icon = "custom_neovim"
+icon_color = "#30c030"
+
+[clangd]
+title = "Neovim"
+icon = "dev_c"
+icon_color = "#085e9f"
+
+["rust-analyzer"]
+title = "Neovim"
+icon = "dev_rust"
+icon_color = "#f74b00"
+
+["rust-analyzer-proc-macro-srv"]
+title = "Neovim"
+icon = "dev_rust"
+icon_color = "#f74b00"
+
+[python]
+title = "Neovim"
+icon = "dev_python"
+icon_color = "#ffdd50"
+
+["lua-language-server"]
+title = "Neovim"
+icon = "dev_lua"
+icon_color = "#080884"
+

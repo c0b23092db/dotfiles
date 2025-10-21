@@ -15,12 +15,12 @@ elseif wezterm.target_triple == "x86_64-unknown-linux-gnu" then
 end
 
 config.mouse_bindings = require("config/mousebinds").mouse_bindings
+merge_config("config/keybinds")
 merge_config("config/general")
 merge_config("config/colorscheme")
 merge_config("config/frame")
 merge_config("config/font")
 merge_config("config/tabbar")
-merge_config("config/keybinds")
 -- merge_config("config/DEBUGLINE")
 
 return config
