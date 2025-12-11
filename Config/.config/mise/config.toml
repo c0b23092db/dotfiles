@@ -1,5 +1,13 @@
 [tools]
-uv = "latest"
-rust = "latest"
+deno = "latest"
 java = "openjdk-21"
-go = "latest"
+node = "24"
+python = "3.13.9"
+rust = "latest"
+uv = "latest"
+"vfox:version-fox/vfox-dotnet" = "10"
+
+[tasks.build]
+description = 'TypeScript Init'
+run = ['npm init -y','npm install --save-dev typescript','npx tsc --init','mkdir src','touch index.ts']
+alias = 'tsinit'

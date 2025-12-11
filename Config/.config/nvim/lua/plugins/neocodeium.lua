@@ -1,6 +1,7 @@
+-- :NeoCodeium auth → APIトークンをコピー → <C-r> + *でペースト
 return {
   "monkoose/neocodeium",
-  lazy = true,
+  lazy = false,
   event = "InsertEnter",
 
   config = function()

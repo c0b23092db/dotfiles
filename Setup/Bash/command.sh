@@ -53,7 +53,7 @@ run_priority_commands() {
     done < "./Setup/Command/$priority_file"
 }
 
-distro=$(new_get_distribution)
+distro=$(get_distribution)
 
 if [[ -f "./Setup/Command/.priority_command.txt" ]]; then
     info "===== 優先ファイル ====="

@@ -1,44 +1,69 @@
-# all ignore #
+##### all ignore #####
 /*
 /.**
-
-##### インストーラー #####
-!install.sh
-!Mac.sh
-!windows11.ps1
-
-# スタンダート #
-!Config
-Config/.Portable
-!Package
-!Setup
-
-# ファイル #
-!.bashrc
-!.bash_profile
-!.bash_logout
-!.zshrc
-!.vimrc
-
-# Python #
-Setup/Python/*
-Setup/Python/lib/__pycache__
-!Setup/Python/main.py
-!Setup/Python/lib/
-!Setup/Python/requirements.txt
-!Setup/Python/README.md
-
+private*
 # 個人情報 #
-.ssh
 .aws
+.ssh
 .bash_history
 .zsh_history
+Log
+Resource/Font
+Resource/Icon
+Resource/Wallpaper
+Resource/MouseCursor
+Resource/Minecraft
+Resource/Installers
+Resource/Password
 
 ##### Git #####
 !LICENSE
 !README.md
 !.gitignore
 !Resource
-Resource/*
-!Resource/github
-!Resource/URL
+
+##### セットアップスクリプト #####
+!install.sh
+!Windows_Installer.ps1
+!Mac_Installer.sh
+!Setup
+
+# パッケージファイル #
+!Package
+
+##### 設定ファイル #####
+!Config
+Config/.Portable
+!init.lua
+!settings.json
+!bindings.json
+!keybindings.json
+!theme.toml
+!keymap.toml
+
+# ファイル #
+!.vimrc
+!.zshrc
+!.bashrc
+!.bash_profile
+!.bash_logout
+!Microsoft.PowerShell_profile.ps1
+
+##### 省くファイル #####
+
+# Visual Studio Code系
+globalStorage
+History
+workspaceStorage
+snippets
+# yazi
+plugins
+state
+package.toml
+!yazi.toml
+# micro
+backups
+buffers
+# NeeView
+History.json
+Cache.db

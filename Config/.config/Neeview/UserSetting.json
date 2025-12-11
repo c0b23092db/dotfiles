@@ -1,0 +1,749 @@
+{
+  "Format": "NeeView/44.1.3919",
+  "Config": {
+    "System": {
+      "Language": "ja",
+      "DateTimeFormat": null,
+      "ArchiveRecursiveMode": "IncludeSubArchives",
+      "BookPageCollectMode": "ImageAndBook",
+      "IsRemoveConfirmed": false,
+      "IsRemoveWantNukeWarning": false,
+      "IsNetworkEnabled": true,
+      "IsSyncUserSetting": true,
+      "IsSettingBackup": false,
+      "IsIgnoreImageDpi": true,
+      "TemporaryDirectory": null,
+      "DownloadPath": "",
+      "IsHiddenFileVisible": false,
+      "IsFileWriteAccessEnabled": false,
+      "IsOpenBookAtCurrentPlace": false,
+      "StringComparerType": "Natural",
+      "IsInputMethodEnabled": false,
+      "DestinationFolderCollection": [],
+      "ExternalAppCollection": [
+        {
+          "Name": null,
+          "Command": null,
+          "Parameter": "\"$File\"",
+          "WorkingDirectory": null,
+          "ArchivePolicy": "SendExtractFile"
+        }
+      ],
+      "TextEditor": null,
+      "WebBrowser": null,
+      "FileManager": null,
+      "FileManagerFileArgs": null,
+      "FileManagerFolderArgs": null,
+      "IsIncrementalSearchEnabled": true,
+      "SearchHistorySize": 5,
+      "ArchiveCopyPolicy": "SendExtractFile",
+      "TextCopyPolicy": "None"
+    },
+    "StartUp": {
+      "IsSplashScreenEnabled": true,
+      "IsMultiBootEnabled": false,
+      "IsRestoreWindowPlacement": true,
+      "IsRestoreSecondWindowPlacement": true,
+      "IsRestoreFullScreen": false,
+      "IsOpenLastBook": false,
+      "IsOpenLastFolder": false,
+      "IsAutoPlaySlideShow": false,
+      "LastBook": null,
+      "LastFolder": null
+    },
+    "Performance": {
+      "CacheMemorySize": 200,
+      "PreLoadSize": 5,
+      "JobWorkerSize": 4,
+      "MaximumSize": "4096,4096",
+      "IsLimitSourceSize": false,
+      "IsLoadingPageVisible": true,
+      "PreExtractSolidSize": 1000
+    },
+    "Image": {
+      "Standard": {
+        "UseWicInformation": true,
+        "SupportFileTypes": ".3fr;.ari;.arw;.avci;.avcs;.avif;.avifs;.bay;.bmp;.cap;.cr2;.cr3;.crw;.cur;.dcr;.dcs;.dds;.dib;.dng;.drf;.eip;.erf;.exif;.fff;.gif;.heic;.heics;.heif;.heifs;.hif;.ico;.icon;.iiq;.jfif;.jpe;.jpeg;.jpg;.jxr;.k25;.kdc;.mef;.mos;.mrw;.nef;.nrw;.orf;.ori;.pef;.png;.ptx;.pxn;.raf;.raw;.rle;.rw2;.rwl;.sr2;.srf;.srw;.tif;.tiff;.wdp;.x3f",
+        "IsAspectRatioEnabled": false,
+        "IsAnimatedGifEnabled": true,
+        "IsAnimatedPngEnabled": true,
+        "IsAllFileSupported": false
+      },
+      "Svg": {
+        "IsEnabled": true,
+        "SupportFileTypes": ".svg"
+      },
+      "IsMediaRepeat": true
+    },
+    "Archive": {
+      "Zip": {
+        "IsEnabled": true,
+        "SupportFileTypes": ".zip",
+        "IsFileWriteAccessEnabled": false,
+        "Encoding": "Local"
+      },
+      "SevenZip": {
+        "IsEnabled": true,
+        "X86DllPath": "",
+        "X64DllPath": "",
+        "SupportFileTypes": ".7z;.cb7;.cbr;.cbz;.lzh;.rar;.zip"
+      },
+      "Pdf": {
+        "IsEnabled": true,
+        "SupportFileTypes": ".pdf",
+        "RenderSize": "1920,1080"
+      },
+      "Media": {
+        "IsEnabled": true,
+        "IsMediaPageEnabled": false,
+        "SupportFileTypes": ".asf;.avi;.mkv;.mov;.mp4;.wmv",
+        "PageSeconds": 10,
+        "MediaStartDelaySeconds": 0.5,
+        "IsMuted": false,
+        "Volume": 0.5,
+        "IsRepeat": false,
+        "IsLibVlcEnabled": false,
+        "LibVlcPath": null,
+        "DefaultSubtitle": "Default"
+      }
+    },
+    "Susie": {
+      "IsEnabled": false,
+      "SusiePluginPath": "",
+      "IsFirstOrderSusieImage": false,
+      "IsFirstOrderSusieArchive": false
+    },
+    "History": {
+      "PanelListItemStyle": "Content",
+      "IsSaveHistory": true,
+      "HistoryFilePath": null,
+      "IsKeepFolderStatus": true,
+      "IsKeepSearchHistory": true,
+      "IsInnerArchiveHistoryEnabled": true,
+      "IsUncHistoryEnabled": true,
+      "IsForceUpdateHistory": false,
+      "HistoryEntryPageCount": 0,
+      "LimitSize": 1000,
+      "LimitSpan": "30.00:00:00",
+      "IsCurrentFolder": false,
+      "IsAutoCleanupEnabled": false,
+      "IsGroupBy": false,
+      "RecentBookCount": 10
+    },
+    "PageViewRecorder": {
+      "IsSavePageViewRecord": false,
+      "PageViewRecordFilePath": null
+    },
+    "Bookmark": {
+      "IsSyncBookshelfEnabled": true,
+      "IsSaveBookmark": true,
+      "BookmarkFilePath": null,
+      "BookmarkFolderOrder": "FileName",
+      "IsSearchIncludeSubdirectories": true,
+      "PanelListItemStyle": "Content",
+      "FolderTreeLayout": "Left",
+      "IsFolderTreeVisible": false,
+      "FolderTreeAreaWidth": 128,
+      "FolderTreeAreaHeight": 72
+    },
+    "Playlist": {
+      "PanelListItemStyle": "Normal",
+      "PlaylistFolder": null,
+      "CurrentPlaylist": null,
+      "IsGroupBy": false,
+      "IsCurrentBookFilterEnabled": false,
+      "IsFirstIn": false
+    },
+    "Window": {
+      "IsTopmost": false,
+      "IsCaptionEmulateInFullScreen": false,
+      "MouseActivateAndEat": false,
+      "State": "Maximized",
+      "IsRestoreAeroSnapPlacement": true,
+      "IsAutoHideInNormal": false,
+      "IsAutoHideInMaximized": false,
+      "IsAutoHideInFullScreen": true,
+      "LastState": "Maximized",
+      "WindowPlacement": "Maximized,64,64,1440,830"
+    },
+    "Theme": {
+      "ThemeType": "Dark",
+      "CustomThemeFolder": null
+    },
+    "Fonts": {
+      "FontName": null,
+      "FontScale": 1.25,
+      "MenuFontScale": 1,
+      "FolderTreeFontScale": 1,
+      "PanelFontScale": 1.25,
+      "IsClearTypeEnabled": true
+    },
+    "Background": {
+      "BackgroundType": "Black",
+      "CustomBackground": {
+        "Type": "SolidColor",
+        "Color": "#FFD3D3D3",
+        "ImageFileName": null
+      },
+      "PageBackgroundColor": "#00FFFFFF",
+      "IsPageBackgroundChecker": false
+    },
+    "WindowTitle": {
+      "WindowTitleFormat1": "$Book ($Page / $PageMax) - $FullName",
+      "WindowTitleFormat2": "$Book ($Page / $PageMax) - $FullNameL | $NameR",
+      "WindowTitleFormatMedia": "$Book"
+    },
+    "PageTitle": {
+      "IsEnabled": true,
+      "PageTitleFormat1": "$Name",
+      "PageTitleFormat2": "$NameL | $NameR",
+      "PageTitleFormatMedia": " "
+    },
+    "AutoHide": {
+      "AutoHideDelayTime": 1,
+      "AutoHideDelayVisibleTime": 0,
+      "AutoHideFocusLockMode": "LogicalTextBoxFocusLock",
+      "IsAutoHideKeyDownDelay": true,
+      "AutoHideHitTestHorizontalMargin": 32,
+      "AutoHideHitTestVerticalMargin": 32,
+      "AutoHideConflictTopMargin": "AllowPixel",
+      "AutoHideConflictBottomMargin": "Allow"
+    },
+    "Notice": {
+      "NoticeShowMessageStyle": "Normal",
+      "BookNameShowMessageStyle": "Normal",
+      "CommandShowMessageStyle": "Normal",
+      "GestureShowMessageStyle": "Normal",
+      "NowLoadingShowMessageStyle": "Normal",
+      "ViewTransformShowMessageStyle": "None",
+      "IsOriginalScaleShowMessage": false,
+      "IsBusyMarkEnabled": true,
+      "IsEmptyMessageEnabled": true
+    },
+    "MenuBar": {
+      "IsHideMenu": false,
+      "IsHideMenuInAutoHideMode": true,
+      "IsAddressBarEnabled": true,
+      "IsHamburgerMenu": false
+    },
+    "Slider": {
+      "IsEnabled": true,
+      "IsHidePageSlider": false,
+      "IsHidePageSliderInAutoHideMode": true,
+      "IsVisiblePlaylistMark": true,
+      "Thickness": 25,
+      "Opacity": 1,
+      "SliderIndexLayout": "Right",
+      "SliderDirection": "SyncBookReadDirection",
+      "IsSliderLinkedFilmStrip": true,
+      "IsSyncPageMode": false
+    },
+    "FilmStrip": {
+      "IsEnabled": false,
+      "IsHideFilmStrip": false,
+      "ImageWidth": 96,
+      "IsVisiblePlaylistMark": false,
+      "IsVisibleNumber": false,
+      "IsManipulationBoundaryFeedbackEnabled": true,
+      "IsSelectedCenter": false,
+      "IsWheelMovePage": false,
+      "IsDetailPopupEnabled": true
+    },
+    "MainView": {
+      "IsFloating": false,
+      "IsFloatingEndWhenClosed": false,
+      "AlternativeContent": "PageList",
+      "IsTopmost": false,
+      "IsHideTitleBar": false,
+      "IsAutoStretch": false,
+      "IsAutoHide": true,
+      "IsAutoShow": true,
+      "WindowPlacement": "",
+      "ReferenceSize": "0,0"
+    },
+    "Panels": {
+      "IsHideLeftPanel": false,
+      "IsHideRightPanel": false,
+      "IsHideLeftPanelInAutoHideMode": true,
+      "IsHideRightPanelInAutoHideMode": true,
+      "IsSideBarEnabled": true,
+      "Opacity": 1,
+      "OpenWithDoubleClick": false,
+      "IsLeftRightKeyEnabled": false,
+      "IsManipulationBoundaryFeedbackEnabled": false,
+      "IsDecoratePlace": true,
+      "MouseWheelSpeedRate": 1,
+      "IsLimitPanelWidth": false,
+      "IsVisibleItemsCount": true,
+      "IsTextSearchEnabled": false,
+      "ConflictTopMargin": 32,
+      "ConflictBottomMargin": 20,
+      "NormalItemProfile": {
+        "ImageShape": "Square",
+        "ImageWidth": 0,
+        "IsDetailPopupEnabled": true,
+        "IsImagePopupEnabled": false,
+        "IsTextVisible": true,
+        "IsTextWrapped": false
+      },
+      "ContentItemProfile": {
+        "ImageShape": "Square",
+        "ImageWidth": 64,
+        "IsDetailPopupEnabled": true,
+        "IsImagePopupEnabled": true,
+        "IsTextVisible": true,
+        "IsTextWrapped": false
+      },
+      "BannerItemProfile": {
+        "ImageShape": "Banner",
+        "ImageWidth": 200,
+        "IsDetailPopupEnabled": true,
+        "IsImagePopupEnabled": false,
+        "IsTextVisible": true,
+        "IsTextWrapped": false
+      },
+      "ThumbnailItemProfile": {
+        "ImageShape": "Original",
+        "ImageWidth": 128,
+        "IsDetailPopupEnabled": true,
+        "IsImagePopupEnabled": false,
+        "IsTextVisible": true,
+        "IsTextWrapped": true
+      },
+      "LeftPanelWidth": 300,
+      "RightPanelWidth": 300,
+      "Layout": {
+        "Panels": {
+          "FolderPanel": {
+            "GridLength": "*",
+            "WindowPlacement": ""
+          },
+          "PageListPanel": {
+            "GridLength": "*",
+            "WindowPlacement": ""
+          },
+          "HistoryPanel": {
+            "GridLength": "*",
+            "WindowPlacement": ""
+          },
+          "FileInformationPanel": {
+            "GridLength": "*",
+            "WindowPlacement": ""
+          },
+          "NavigatePanel": {
+            "GridLength": "*",
+            "WindowPlacement": ""
+          },
+          "ImageEffectPanel": {
+            "GridLength": "*",
+            "WindowPlacement": ""
+          },
+          "BookmarkPanel": {
+            "GridLength": "*",
+            "WindowPlacement": ""
+          },
+          "PlaylistPanel": {
+            "GridLength": "*",
+            "WindowPlacement": ""
+          }
+        },
+        "Docks": {
+          "Left": {
+            "PanelLayout": [
+              {
+                "Orientation": "Vertical",
+                "Panels": [
+                  "FolderPanel"
+                ]
+              },
+              {
+                "Orientation": "Vertical",
+                "Panels": [
+                  "PageListPanel"
+                ]
+              },
+              {
+                "Orientation": "Vertical",
+                "Panels": [
+                  "HistoryPanel"
+                ]
+              }
+            ],
+            "SelectedItem": "PageListPanel",
+            "Panels": []
+          },
+          "Right": {
+            "PanelLayout": [
+              {
+                "Orientation": "Vertical",
+                "Panels": [
+                  "FileInformationPanel"
+                ]
+              },
+              {
+                "Orientation": "Vertical",
+                "Panels": [
+                  "NavigatePanel"
+                ]
+              },
+              {
+                "Orientation": "Vertical",
+                "Panels": [
+                  "ImageEffectPanel"
+                ]
+              },
+              {
+                "Orientation": "Vertical",
+                "Panels": [
+                  "BookmarkPanel"
+                ]
+              },
+              {
+                "Orientation": "Vertical",
+                "Panels": [
+                  "PlaylistPanel"
+                ]
+              }
+            ],
+            "SelectedItem": null,
+            "Panels": []
+          }
+        },
+        "Windows": {
+          "Panels": []
+        }
+      }
+    },
+    "Bookshelf": {
+      "Home": null,
+      "IsVisibleHistoryMark": true,
+      "IsVisibleBookmarkMark": true,
+      "IsSyncFolderTree": false,
+      "IsCloseBookWhenMove": false,
+      "IsOpenNextBookWhenRemove": true,
+      "IsInsertItem": true,
+      "IsMultipleRarFilterEnabled": false,
+      "IsCruise": false,
+      "ExcludePattern": null,
+      "IsSearchIncludeSubdirectories": true,
+      "DefaultFolderOrder": "FileName",
+      "PlaylistFolderOrder": "FileName",
+      "FolderSortOrder": "First",
+      "PanelListItemStyle": "Content",
+      "FolderTreeLayout": "Left",
+      "IsFolderTreeVisible": false,
+      "FolderTreeAreaWidth": 128,
+      "FolderTreeAreaHeight": 72
+    },
+    "Information": {
+      "DateTimeFormat": null,
+      "MapProgramFormat": null,
+      "IsVisibleFile": true,
+      "IsVisibleImage": true,
+      "IsVisibleDescription": true,
+      "IsVisibleOrigin": true,
+      "IsVisibleCamera": true,
+      "IsVisibleAdvancedPhoto": true,
+      "IsVisibleGps": true,
+      "IsVisibleExtras": false,
+      "PropertyHeaderWidth": "128"
+    },
+    "Navigator": {
+      "IsVisibleThumbnail": false,
+      "ThumbnailHeight": 256,
+      "IsVisibleControlBar": false
+    },
+    "PageList": {
+      "PanelListItemStyle": "Content",
+      "Format": "Smart",
+      "ShowBookTitle": true,
+      "FocusMainView": false,
+      "IsGroupBy": false
+    },
+    "Thumbnail": {
+      "IsCacheEnabled": true,
+      "ThumbnailCacheFilePath": null,
+      "CacheLimitSpan": "30.00:00:00",
+      "ImageWidth": 256,
+      "Format": "Jpeg",
+      "Quality": 80,
+      "ThumbnailBookCapacity": 200,
+      "ThumbnailPageCapacity": 100
+    },
+    "SlideShow": {
+      "SlideShowInterval": 5,
+      "IsCancelSlideByMouseMove": true,
+      "IsSlideShowByLoop": false,
+      "IsTimerVisible": false
+    },
+    "Effect": {},
+    "Control": {},
+    "ImageEffect": {
+      "IsEnabled": false,
+      "EffectType": "Level",
+      "IsHsvMode": false,
+      "LevelEffect": {
+        "Black": 0,
+        "White": 1,
+        "Center": 0.5,
+        "Minimum": 0,
+        "Maximum": 1
+      },
+      "HsvEffect": {
+        "Hue": 0,
+        "Saturation": 0,
+        "Value": 0
+      },
+      "ColorSelectEffect": {
+        "Hue": 0,
+        "Range": 0.1,
+        "Curve": 1
+      },
+      "BlurEffect": {
+        "Radius": 5
+      },
+      "BloomEffect": {
+        "BaseIntensity": 1,
+        "BaseSaturation": 1,
+        "BloomIntensity": 1.25,
+        "BloomSaturation": 1,
+        "Threshold": 0.25
+      },
+      "MonochromeEffect": {
+        "Color": "#FFFFFFFF"
+      },
+      "ColorToneEffect": {
+        "DarkColor": "#FF338000",
+        "LightColor": "#FFFFE580",
+        "ToneAmount": 0.5,
+        "Desaturation": 0.5
+      },
+      "SharpenEffect": {
+        "Amount": 2,
+        "Height": 0.5
+      },
+      "EmbossedEffect": {
+        "Color": "#FF808080",
+        "Amount": 3,
+        "Height": 1
+      },
+      "PixelateEffect": {
+        "Pixelation": 0.75
+      },
+      "MagnifyEffect": {
+        "Center": "0.5,0.5",
+        "Amount": 0.5,
+        "InnerRadius": 0.2,
+        "OuterRadius": 0.4
+      },
+      "RippleEffect": {
+        "Center": "0.5,0.5",
+        "Frequency": 40,
+        "Magnitude": 0.1,
+        "Phase": 10
+      },
+      "SwirlEffect": {
+        "Center": "0.5,0.5",
+        "TwistAmount": 10
+      }
+    },
+    "ImageCustomSize": {
+      "IsEnabled": false,
+      "Size": "256,256",
+      "AspectRatio": "None",
+      "ApplicabilityRate": 1,
+      "IsAlignLongSide": false
+    },
+    "ImageTrim": {
+      "IsEnabled": false,
+      "Left": 0,
+      "Right": 0,
+      "Top": 0,
+      "Bottom": 0
+    },
+    "ImageDotKeep": {
+      "IsEnabled": false,
+      "Threshold": 1
+    },
+    "ImageGrid": {
+      "IsEnabled": false,
+      "Target": "Image",
+      "Color": "#80808080",
+      "DivX": 8,
+      "DivY": 8,
+      "IsSquare": false
+    },
+    "ImageResizeFilter": {
+      "IsEnabled": false,
+      "ResizeInterpolation": "Lanczos",
+      "IsUnsharpMaskEnabled": true,
+      "UnsharpMask": {
+        "Amount": 40,
+        "Radius": 1.5,
+        "Threshold": 0
+      }
+    },
+    "View": {
+      "RotateCenter": "View",
+      "ScaleCenter": "View",
+      "FlipCenter": "View",
+      "IsScaleStretchTracking": false,
+      "IsKeepScale": false,
+      "IsKeepScaleBooks": false,
+      "IsKeepAngle": false,
+      "IsKeepAngleBooks": false,
+      "IsKeepFlip": false,
+      "IsKeepFlipBooks": false,
+      "ViewHorizontalOrigin": "CenterOrDirectionDependent",
+      "ViewVerticalOrigin": "CenterOrDirectionDependent",
+      "AngleFrequency": 0,
+      "IsLimitMove": true,
+      "IsMoveLockStart": true,
+      "StretchMode": "Uniform",
+      "AllowStretchScaleUp": true,
+      "AllowStretchScaleDown": true,
+      "IsBaseScaleEnabled": true,
+      "AllowFileContentAutoRotate": false,
+      "IsRotateStretchEnabled": true,
+      "MainViewMargin": 0,
+      "IsKeepPageTransform": false,
+      "ScrollDuration": 0.2,
+      "PageMoveDuration": 0,
+      "AutoRotatePolicy": "FitToViewArea"
+    },
+    "Mouse": {
+      "IsGestureEnabled": true,
+      "IsDragEnabled": true,
+      "MinimumDragDistance": 5,
+      "GestureMinimumDistance": 30,
+      "LongButtonDownMode": "Loupe",
+      "LongButtonMask": "Left",
+      "LongButtonDownTime": 1,
+      "LongButtonRepeatTime": 0.1,
+      "IsCursorHideEnabled": true,
+      "CursorHideTime": 2,
+      "IsCursorHideReleaseAction": true,
+      "CursorHideReleaseDistance": 5,
+      "IsHoverScroll": false,
+      "HoverScrollDuration": 0.5,
+      "InertiaSensitivity": 0.5,
+      "AutoScrollSensitivity": 1,
+      "IsMouseWheelScrollEnabled": false,
+      "MouseWheelScrollSensitivity": 1,
+      "MouseWheelScrollDuration": 0.2
+    },
+    "Touch": {
+      "IsEnabled": true,
+      "DragAction": "Gesture",
+      "HoldAction": "Drag",
+      "IsAngleEnabled": true,
+      "IsScaleEnabled": true,
+      "GestureMinimumDistance": 16,
+      "MinimumManipulationRadius": 80,
+      "MinimumManipulationDistance": 30,
+      "InertiaSensitivity": 0.6
+    },
+    "Loupe": {
+      "IsLoupeCenter": false,
+      "MinimumScale": 2,
+      "MaximumScale": 10,
+      "DefaultScale": 2,
+      "ScaleStep": 1,
+      "IsResetByRestart": false,
+      "IsResetByPageChanged": true,
+      "IsWheelScalingEnabled": true,
+      "Speed": 1,
+      "IsEscapeKeyEnabled": true,
+      "IsVisibleLoupeInfo": true
+    },
+    "Book": {
+      "WideRatio": 1,
+      "Excludes": "__MACOSX;.DS_Store",
+      "IsPanorama": false,
+      "Orientation": "Horizontal",
+      "ContentsSpace": -1,
+      "FrameSpace": -1,
+      "IsPrioritizeBookMove": false,
+      "IsPrioritizePageMove": true,
+      "IsReadyToPageMove": false,
+      "PageEndAction": "None",
+      "ResetNextBookPage": true,
+      "IsNotifyPageLoop": false,
+      "TerminalSound": null,
+      "IsConfirmRecursive": false,
+      "IsAutoRecursive": false,
+      "FolderSortOrder": "First",
+      "ResetPageWhenRandomSort": false,
+      "IsInsertDummyPage": false,
+      "IsInsertDummyFirstPage": false,
+      "IsInsertDummyLastPage": true,
+      "DummyPageColor": "#FFFFFFFF",
+      "DividePageRate": 0.5,
+      "IsStaticWidePage": false,
+      "WidePageStretch": "UniformHeight",
+      "WidePageVerticalAlignment": "Center",
+      "LoadingPageColor": "#FFE0E0E0",
+      "BookThumbnailDepth": 2
+    },
+    "BookSetting": {
+      "PageMode": "SinglePage",
+      "BookReadOrder": "RightToLeft",
+      "IsSupportedDividePage": false,
+      "IsSupportedSingleFirstPage": false,
+      "IsSupportedSingleLastPage": false,
+      "IsSupportedWidePage": true,
+      "IsRecursiveFolder": true,
+      "SortMode": "FileName",
+      "AutoRotate": "None",
+      "BaseScale": 1
+    },
+    "BookSettingDefault": {
+      "PageMode": "SinglePage",
+      "BookReadOrder": "RightToLeft",
+      "IsSupportedDividePage": false,
+      "IsSupportedSingleFirstPage": false,
+      "IsSupportedSingleLastPage": false,
+      "IsSupportedWidePage": true,
+      "IsRecursiveFolder": false,
+      "SortMode": "Entry",
+      "AutoRotate": "None",
+      "BaseScale": 1
+    },
+    "BookSettingPolicy": {
+      "Page": "RestoreOrDefault",
+      "PageMode": "RestoreOrDefault",
+      "BookReadOrder": "RestoreOrDefault",
+      "IsSupportedDividePage": "RestoreOrDefault",
+      "IsSupportedSingleFirstPage": "RestoreOrDefault",
+      "IsSupportedSingleLastPage": "RestoreOrDefault",
+      "IsSupportedWidePage": "RestoreOrDefault",
+      "IsRecursiveFolder": "RestoreOrDefault",
+      "SortMode": "RestoreOrDefault",
+      "AutoRotate": "RestoreOrContinue",
+      "BaseScale": "RestoreOrDefault"
+    },
+    "Command": {
+      "IsAccessKeyEnabled": true,
+      "IsReversePageMove": true,
+      "IsReversePageMoveWheel": false,
+      "IsReversePageMoveHorizontalWheel": true,
+      "IsHorizontalWheelLimitedOnce": true
+    },
+    "Script": {
+      "IsScriptFolderEnabled": false,
+      "ScriptFolder": null,
+      "ErrorLevel": "Error",
+      "OnBookLoadedWhenRenamed": true,
+      "IsSQLiteEnabled": false
+    },
+    "WindowTittle": {
+      "WindowTitleFormat1": "$Book ($Page / $PageMax) - $FullName",
+      "WindowTitleFormat2": "$Book ($Page / $PageMax) - $FullNameL | $NameR",
+      "WindowTitleFormatMedia": "$Book"
+    }
+  },
+  "ContextMenu": null,
+  "SusiePlugins": {},
+  "DragActions": {},
+  "Commands": {}
+}

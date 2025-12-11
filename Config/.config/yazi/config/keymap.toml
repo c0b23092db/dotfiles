@@ -1,0 +1,21 @@
+[mgr]
+prepend_keymap = [
+  # Change yazi #
+  { on = "!", for = "unix", run = 'shell "$SHELL" --block', desc = "Open $SHELL here" },
+  { on = "!", for = "windows", run = 'shell "pwsh.exe" --block', desc = "Open PowerShell 7 here" },
+  { on = "<F2>", run = "rename --empty=stem --cursor=start", desc = "Rename selected file(s)" },
+  { on = "<Esc>", run = 'close', desc = "Cancel input" },
+
+  # Windows KeyMap #
+  { on = "<C-Space>",orphan = true, run = 'shell -- cmd /C ""C:\\Program Files\\PowerToys\\WinUI3Apps\\PowerToys.Peek.UI.exe" "%0""',desc = "Peek preview current file", for = "windows" },
+
+  # Default Plugin
+	{ on = "z", run = "plugin zoxide", desc = "Jump to a directory via zoxide" },
+	{ on = "Z", run = "plugin fzf",    desc = "Jump to a file/directory via fzf" },
+
+  # In Plugin #
+  { on = "<Enter>", run = "plugin smart-enter", desc = "Enter the child directory, or open the file" },
+  { on = "F", run = "plugin smart-filter", desc = "Smart Filter" },
+  { on = "T", run = "plugin toggle-pane min-preview", desc = "Show or hide the preview pane" },
+  { on = "T", run = "plugin toggle-pane max-preview", desc = "Maximize or restore the preview pane" },
+]

@@ -7,30 +7,30 @@ return {
 
     -- [[ Windowsのキーバインド ]] --
     -- 操作
-    { key = 'PageUp', mods = 'NONE', action = act.ScrollByPage(-1) },
+    { key = 'PageUp', mods = 'NONE', action = act.ScrollByPage(-1) }, -- 1ページ分スクロール
     { key = 'PageDown', mods = 'NONE', action = act.ScrollByPage(1) },
-    { key = 'f', mods = 'CTRL|SHIFT', action = act.Search 'CurrentSelectionOrEmptyString' }, -- 文字の検索
-    { key = 'F', mods = 'CTRL|SHIFT', action = act.Search 'CurrentSelectionOrEmptyString' },
     { key = 'p', mods = 'CTRL', action = act.ActivateCommandPalette }, -- コマンドパレットの表示
     { key = 'P', mods = 'CTRL', action = act.ActivateCommandPalette },
     { key = 'F4', mods = 'NONE', action = act.ActivateCommandPalette },
+    { key = 'f', mods = 'CTRL|SHIFT', action = act.Search 'CurrentSelectionOrEmptyString' }, -- 文字の検索
+    { key = 'F', mods = 'CTRL|SHIFT', action = act.Search 'CurrentSelectionOrEmptyString' },
     { key = 'u', mods = 'CTRL|SHIFT', action = act.CharSelect{ copy_on_select = true, copy_to =  'ClipboardAndPrimarySelection' } }, -- Unicode文字の選択
     { key = 'U', mods = 'CTRL|SHIFT', action = act.CharSelect{ copy_on_select = true, copy_to =  'ClipboardAndPrimarySelection' } },
-    { key = 'k', mods = 'SHIFT|CTRL', action = act.ClearScrollback 'ScrollbackOnly' }, -- スクロールバックのクリア
-    { key = 'K', mods = 'SHIFT|CTRL', action = act.ClearScrollback 'ScrollbackOnly' },
-    { key = 'l', mods = 'SHIFT|CTRL', action = act.ClearScrollback 'ScrollbackAndViewport' }, -- スクロールバックのクリア
-    { key = 'L', mods = 'SHIFT|CTRL', action = act.ClearScrollback 'ScrollbackAndViewport' },
-    { key = 'o', mods = 'SHIFT|CTRL', action = act.ActivateCopyMode }, -- コピーモードの開始
-    { key = 'O', mods = 'SHIFT|CTRL', action = act.ActivateCopyMode },
+    { key = 'k', mods = 'CTRL|SHIFT', action = act.ClearScrollback 'ScrollbackOnly' }, -- スクロールバックのクリア
+    { key = 'K', mods = 'CTRL|SHIFT', action = act.ClearScrollback 'ScrollbackOnly' },
+    { key = 'l', mods = 'CTRL|SHIFT', action = act.ClearScrollback 'ScrollbackAndViewport' }, -- スクロールバックのクリア
+    { key = 'L', mods = 'CTRL|SHIFT', action = act.ClearScrollback 'ScrollbackAndViewport' },
+    { key = 'o', mods = 'CTRL|SHIFT', action = act.ActivateCopyMode }, -- コピーモードの開始
+    { key = 'O', mods = 'CTRL|SHIFT', action = act.ActivateCopyMode },
 
     -- ウィンドウ
     { key = 'n', mods = 'CTRL|SHIFT', action = act.SpawnWindow }, -- ウィンドウの追加
     { key = 'N', mods = 'CTRL|SHIFT', action = act.SpawnWindow },
     { key = '0', mods = 'CTRL', action = act.ResetFontSize }, -- 文字サイズリセット
     { key = ';', mods = 'CTRL', action = act.IncreaseFontSize }, -- 文字サイズ拡大
-    { key = '+', mods = 'SHIFT|CTRL', action = act.IncreaseFontSize },
+    { key = '+', mods = 'CTRL|SHIFT', action = act.IncreaseFontSize },
     { key = '-', mods = 'CTRL', action = act.DecreaseFontSize }, -- 文字サイズ縮小
-    { key = '=', mods = 'SHIFT|CTRL', action = act.DecreaseFontSize },
+    { key = '=', mods = 'CTRL|SHIFT', action = act.DecreaseFontSize },
 
     -- ペイン
     { key = 'z', mods = 'SHIFT|ALT', action = act.TogglePaneZoomState }, -- アクティブペインの強調表示
@@ -41,23 +41,20 @@ return {
     { key = 'D', mods = 'SHIFT|ALT', action = act.SplitHorizontal{ domain = 'CurrentPaneDomain' } },
     { key = 's', mods = 'SHIFT|ALT', action = act.SplitVertical{ domain = 'CurrentPaneDomain' } }, -- 下に新しいペインを追加
     { key = 'S', mods = 'SHIFT|ALT', action = act.SplitVertical{ domain = 'CurrentPaneDomain' } },
-    -- { key = 'r', mods = 'SHIFT|ALT', action = act.SplitVertical{ domain = 'CurrentPaneDomain' } }, -- 下に小さな新しいペインを追加
-    -- { key = 'R', mods = 'SHIFT|ALT', action = act.SplitVertical{ domain = 'CurrentPaneDomain' } },
-    { key = 'LeftArrow', mods = 'SHIFT|ALT', action = act.AdjustPaneSize{ 'Left', 1 } }, -- ペインのサイズ調整
-    { key = 'RightArrow', mods = 'SHIFT|ALT', action = act.AdjustPaneSize{ 'Right', 1 } },
-    { key = 'UpArrow', mods = 'SHIFT|ALT', action = act.AdjustPaneSize{ 'Up', 1 } },
+    { key = 'UpArrow', mods = 'SHIFT|ALT', action = act.AdjustPaneSize{ 'Up', 1 } }, -- ペインのサイズ調整
     { key = 'DownArrow', mods = 'SHIFT|ALT', action = act.AdjustPaneSize{ 'Down', 1 } },
-
-    { key = 'UpArrow', mods = 'SHIFT|CTRL', action = act.ActivatePaneDirection 'Up' }, -- ペイン間のカーソル移動
-    { key = 'DownArrow', mods = 'SHIFT|CTRL', action = act.ActivatePaneDirection 'Down' },
-    { key = 'RightArrow', mods = 'SHIFT|CTRL', action = act.ActivatePaneDirection 'Right' },
-    { key = 'LeftArrow', mods = 'SHIFT|CTRL', action = act.ActivatePaneDirection 'Left' },
+    { key = 'LeftArrow', mods = 'SHIFT|ALT', action = act.AdjustPaneSize{ 'Left', 1 } },
+    { key = 'RightArrow', mods = 'SHIFT|ALT', action = act.AdjustPaneSize{ 'Right', 1 } },
+    { key = 'UpArrow', mods = 'CTRL|SHIFT', action = act.ActivatePaneDirection 'Up' }, -- ペイン間のカーソル移動
+    { key = 'DownArrow', mods = 'CTRL|SHIFT', action = act.ActivatePaneDirection 'Down' },
+    { key = 'LeftArrow', mods = 'CTRL|SHIFT', action = act.ActivatePaneDirection 'Left' },
+    { key = 'RightArrow', mods = 'CTRL|SHIFT', action = act.ActivatePaneDirection 'Right' },
 
     -- タブ
     { key = 'T', mods = 'CTRL|SHIFT', action = act.SpawnTab 'CurrentPaneDomain' }, -- タブの追加
     { key = 'W', mods = 'CTRL|SHIFT', action = act.CloseCurrentTab{ confirm = false } }, -- タブの削除
-    { key = '{', mods = 'SHIFT|CTRL', action = act.MoveTabRelative(-1) }, -- タブの移動
-    { key = '}', mods = 'SHIFT|CTRL', action = act.MoveTabRelative(1) },
+    { key = '{', mods = 'CTRL|SHIFT', action = act.MoveTabRelative(-1) }, -- タブの移動
+    { key = '}', mods = 'CTRL|SHIFT', action = act.MoveTabRelative(1) },
     -- タブ切り替え
     { key = 'Tab', mods = 'CTRL', action = act.ActivateTabRelative(1) }, -- タブの切り替え
     { key = 'Tab', mods = 'CTRL|SHIFT', action = act.ActivateTabRelative(-1) },
@@ -78,18 +75,15 @@ return {
         local selection_text = window:get_selection_text_for_pane(pane)
         local is_selection_active = string.len(selection_text) ~= 0
         if is_selection_active then
-          window:perform_action(wezterm.action.CopyTo('ClipboardAndPrimarySelection'), pane)
+          window:perform_action(act.CopyTo('ClipboardAndPrimarySelection'), pane)
         else
-          window:perform_action(wezterm.action.SendKey{ key='c', mods='CTRL' }, pane)
+          window:perform_action(act.SendKey{ key='c', mods='CTRL' }, pane)
         end
       end),
     },
-    --[[
-    { key = 'C', mods = 'CTRL', action = act.CopyTo(Clipboard) }, -- コピー
-    { key = 'V', mods = 'CTRL', action = act.PasteFrom(Clipboard) }, -- 貼り付け
-    --]]
+    { key = 'v', mods = 'CTRL', action = act.PasteFrom 'Clipboard' },
 
-    { key = 'phys:Space', mods = 'SHIFT|CTRL', action = act.QuickSelect }, -- クイックセレクトの開始
+    { key = 'phys:Space', mods = 'CTRL|SHIFT', action = act.QuickSelect }, -- クイックセレクトの開始
     { key = 'F5', mods = 'NONE', action = act.ReloadConfiguration }, -- Weztermの設定の再読み込み
     { key = 'F11', mods = 'NONE', action = act.ToggleFullScreen }, -- フルスクリーン化
     { key = 'F12', mods = 'NONE',action = act.ShowDebugOverlay }, -- デバッグ情報の表示

@@ -1,0 +1,41 @@
+/* https://forum.vivaldi.net/topic/91137/%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0css%E3%81%AE%E5%B0%8F%E3%83%8D%E3%82%BF/2 */
+/* ブレイクモード解除ボタンを全体化 */
+#app:not(.dev) .break-mode button.HUD {
+  z-index: 64;
+  &:hover {color: var(--colorHighlightBg)}
+  &::after {
+    content: ''; background-color: transparent; position: absolute; cursor: pointer;
+    width: 100vw; height: 100vh; left: calc(100px - 50vw); top: calc(100px - 50vh); z-index: -1;
+  }
+}
+/*【Vivaldiボタン】*/
+.vivaldi span {
+  transform: scale(1.3);
+  fill: #83ccd2;  /*好きなHTMLカラーコードを指定*/
+}
+/* Vivaldiアイコン・ワークスペースの「▼」を消す */
+#app:not(.dev) #browser:has(.vivaldi-v) :is(#header, .mainbar) {
+  --menuWidth: 34px;
+  .vivaldi .expand-arrow {display: none}
+}
+#app:not(.dev) .button-toolbar.workspace-popup button:has(.button-icon) {
+  padding: 0 6px;
+  .button-toolbar-menu-indicator {display: none}
+}
+/*【ナビゲーションバー】透明化*/
+.startpage .startpage-navigation {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+/*【スタートページ】ナビゲーションバーを下部配置にする*/
+/* https://www.naporitansushi.com/vivaldi-start-page-navigationbar-bottom-css */
+.startpage .startpage-navigation {
+    order: 1 !important;
+}
+/*【ステータスバー】背景の透明化＆角丸化*/
+#webview-container ~ .StatusInfo .StatusInfo-Content {
+  background-color: var(--colorBgAlphaHeavy) !important;
+  border: none !important;
+  border-radius: var(--radius) !important;
+  backdrop-filter: var(--backgroundBlur) !important;
+}

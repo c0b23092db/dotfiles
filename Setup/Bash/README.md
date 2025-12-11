@@ -39,7 +39,7 @@ cargo install --locked cargo-binstall
 
 パッケージマネージャーによるインストールは以下の通りに実行されます。
 - winget : `winget install --source winget --exact --id <package>`
-- apt : `sudo apt install --y <package>`
+- apt : `sudo apt install --yes <package>`
 - brew : `brew install <package>`
 - pacman : `pacman -S <package>`
 

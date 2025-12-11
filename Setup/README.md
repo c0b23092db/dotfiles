@@ -6,22 +6,21 @@
 - **Resource**
   画像ファイルなど個人的なファイルを保存するディレクトリ
 - **Config**
-  クロスプラットフォーム対応・インストーラー版
+  設定ファイルを保存するディレクトリ
   - **.config**
     $HOMEディレクトリに設置する`.config`ディレクトリ
   - **.Portable**
-    クロスプラットフォーム・ポータブル版
+    クロスプラットフォームのポータブル版の設定ファイルを保存するディレクトリ
   - **.Windows**
     Windows・インストーラー版
     - **.Portable**
-      Windows・ポータブル版
-    - **Self**
-    - **Roaming**
-    - **configpotision.csv**
+    - **[ConfigPotision.csv](../Config/.Windows/ConfigPotision.csv)**
       コピーするファイルとディレクトリを設定するファイル
   - **.Ubuntu**
     Ubuntu・インストーラー版
     - **.config**
+    - **.Portable**
+
 - **Package**
   パッケージマネージャーでインストールできるIDをまとめるディレクトリ
 - **Setup**
@@ -31,17 +30,17 @@
       最優先で読み込むコマンドファイル
   - **Distribution**
     Bashを使うインストーラー
-  - **Python**
-    Pythonを使うインストーラー
-- **install.sh**
-  Linux用インストーラー
-- **windows11.ps1**
-  Windows11用インストーラー
-- **mac.sh**
-  MaxOS用インストーラー
+  - **Windows**
+    Windowsで使用するインストーラー
+- **[install.sh](../install.sh)**
+  Linux用のインストーラー
+- **[Windows_Installer.ps1](../Windows_Installer.ps1)**
+  Windows11用のインストーラー
+- **[Mac_Installer.sh](../Mac_Installer.sh)**
+  MaxOS用のインストーラー
 - **[.gitignore](../.gitignore)**
 - **[README.md](../README.md)**
-- **[LICENCE](../LICENCE)**
+- **[LICENSE](../LICENSE)**
 
 ## セットアップの仕組み
 セットアップの順番は以下の通りに行われます。
@@ -57,18 +56,17 @@
 - テキストファイルに記載されたコマンドの実行
 - 事後のLinuxコマンドの実行
 
-### windows11.ps1
+### Windows_Installer.ps1
 - スクリプトの起動
-- スクリプトファイルのコマンド実行
-- Pythonインストーラーの起動
-- パッケージマネージャーによる**CSVファイル**でのインストール
-- パッケージマネージャーによる**TXTファイル**でのインストール
-- .priority_-name-_command.txtで指定したos依存のコマンド実行
-- os依存のコマンド実行
-- .priority_command.txtで指定したコマンド実行
-- コマンド実行
-
-途中でコマンドを実行するファイルが無くても継続するため、**`id_install.csv`を使わずに直接OSディレクトリにパッケージをインストールするコマンドを書く**ことも可能です。
+- スクリプトの実行環境を確認
+- 一時パスの設定
+- 事前のWindowsコマンドの実行
+- WinGetによるインストール
+- PowersShell PSResourceによるインストール
+- テキストファイルに記載されたコマンドの実行
+- Visual StudioのINCLUDE,LIB,LIBPATHの設定
+- 設定ファイルのコピー / シンボリックリンクの作成
+- 事後のWindowsコマンドの実行
 
 ## テキストファイルの扱い
 特殊文字はこのように扱われます。
@@ -88,7 +86,3 @@ Linux系のインストーラー分岐です。`install.sh`から読み込むよ
 ```bash
 bash Setup/Distribution/distribution_name.sh
 ```
-
-### Python
-uvを使用したPythonのセットアップです。
-詳しくは[PythonのREADME.md](./Python/README.md)をお読みください。

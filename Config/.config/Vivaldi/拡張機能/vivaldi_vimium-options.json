@@ -1,0 +1,35 @@
+{
+  "hideUpdateNotifications": true,
+  "keyMappings": "# ABCDEGHILMNOPQRSTUVWXYZabcdeghlmnopqrstuvwxyz1234567890!\"#$%&'()-^\\@[;:],./\\=~|`{+*}<>?_\n\nunmapAll\nmap i enterInsertMode\nmap j scrollDown\nmap k scrollUp\nmap J scrollLeft\nmap K scrollRight\nmap f LinkHints.activateMode\nmap F LinkHints.activateModeToOpenInNewTab",
+  "newTabUrl": "chrome://vivaldi-webui/startpage",
+  "scrollStepSize": 50,
+  "grabBackFocus": true,
+  "searchEngines": "",
+  "settingsVersion": "2.3.1",
+  "exclusionRules": [
+    {
+      "passKeys": "",
+      "pattern": "https://abema.tv/video/episode/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://pc-play.games.dmm.co.jp/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://paiza.jp/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://unityroom.com/*"
+    },
+    {
+      "passKeys": "cftimPNhjkl",
+      "pattern": "https?://www.youtube.com/*"
+    },
+    {
+      "passKeys": "ABCDEGHILMNOPQRSTUVWXYZabcdeghlmnopqrstuvwxyz1234567890!\"#$%&'()-^\\@[;:],./\\=~|`{+*}<>?_",
+      "pattern": "https://*"
+    }
+  ]
+}

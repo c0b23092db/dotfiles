@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 ########## エイリアス ##########
 
 ##### デフォルト #####
@@ -17,8 +19,10 @@ fi
 ##### Windows,Mac #####
 alias cls='clear'
 alias ii='xdg-open'
-alias open='xdg-open'
 alias start='xdg-open'
+
+##### Mac #####
+alias open='xdg-open'
 
 ##### Linux #####
 alias relogin='exec $SHELL -l'

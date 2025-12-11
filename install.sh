@@ -3,7 +3,7 @@
 clear
 source ./Setup/Bash/common.sh
 
-distribution=$(new_get_distribution)
+distribution=$(get_distribution)
 if [ "$distribution" = "Ubuntu" ]; then
     source ./Setup/Distribution/Based_Ubuntu.sh
 elif [ "$distribution" = "Linux Mint" ]; then

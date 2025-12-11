@@ -1,7 +1,7 @@
 local wezterm = require("wezterm")
 
 local function get_tab_icon(tab)
--- 拡張子を変更するようにする
+  -- 拡張子を変更するようにする
   tab = string.gsub(tab:match("[^\\]+$"), ".exe", "")
 
   local title = "PowerShell 7 (x64)"
@@ -12,11 +12,17 @@ local function get_tab_icon(tab)
     -- title = "PowerShell 7 (x64)"
     -- icon = wezterm.nerdfonts.md_console_line
     -- icon_color = "#50A0F0"
+-- Terminal
   elseif tab == "cmd" then
     title = "CommandPrompt"
     icon = wezterm.nerdfonts.md_console_line
     icon_color = "#101010"
-  elseif tab == "wslhost" then
+  elseif tab == "zsh" then
+    title = "Zsh"
+    icon = wezterm.nerdfonts.md_console_line
+    icon_color = "#50A0FF"
+  elseif tab == "wsl" or
+         tab == "wslhost" then
     title = "WSL"
     icon = wezterm.nerdfonts.cod_terminal_linux
     icon_color = "#e95420"
@@ -24,11 +30,12 @@ local function get_tab_icon(tab)
     title = "Docker"
     icon = wezterm.nerdfonts.dev_docker
     icon_color = "#2b99ee"
--- Program
+-- Node
   elseif tab == "node" then
     title = "Node"
     icon = wezterm.nerdfonts.dev_nodejs
     icon_color = "#8fc708"
+-- Rust
   elseif tab == "rustup" then
     title = "Rustup"
     icon = wezterm.nerdfonts.dev_rust
@@ -37,6 +44,11 @@ local function get_tab_icon(tab)
     title = "Cargo"
     icon = wezterm.nerdfonts.md_food_takeout_box
     icon_color = "#ebb142"
+-- Python
+  elseif tab == "python" then
+    title = "Python"
+    icon = wezterm.nerdfonts.dev_python
+    icon_color = "#ffdd50"
 -- RUN
   elseif tab == "winget" then
     title = "Winget"
@@ -46,6 +58,10 @@ local function get_tab_icon(tab)
     title = "Git"
     icon = wezterm.nerdfonts.md_git
     icon_color = "#f05539"
+  elseif tab == "file" then
+    title = "file"
+    icon = wezterm.nerdfonts.cod_folder_opened
+    icon_color = "#FFD050"
 -- TUI
   elseif tab == "btm" then
     title = "bottom"
@@ -69,11 +85,11 @@ local function get_tab_icon(tab)
     icon_color = "#2b99ee"
 -- CLI Editer
   elseif tab == "edit" then
-    title = "edit"
+    title = "Edit"
     icon = wezterm.nerdfonts.fa_edit
     icon_color = "#66d88b"
   elseif tab == "micro" then
-    title = "micro"
+    title = "Micro"
     icon = wezterm.nerdfonts.md_alpha_m_box
     icon_color = "#2e3192"
 -- Neovim
@@ -82,20 +98,20 @@ local function get_tab_icon(tab)
     title = "Neovim"
     icon = wezterm.nerdfonts.custom_neovim
     icon_color = "#30c030"
-  elseif tab == "clangd" then
+  elseif tab == "clangd" then  -- C言語
     title = "Neovim"
     icon = wezterm.nerdfonts.dev_c
     icon_color = "#085e9f"
-  elseif  tab == "rust-analyzer" or
+  elseif tab == "ruff" then  -- Python
+    title = "Neovim"
+    icon = wezterm.nerdfonts.dev_python
+    icon_color = "#FFD050"
+  elseif  tab == "rust-analyzer" or -- Rust
           tab == "rust-analyzer-proc-macro-srv" then
     title = "Neovim"
     icon = wezterm.nerdfonts.dev_rust
     icon_color = "#f74b00"
-  elseif tab == "python" then
-    title = "Neovim"
-    icon = wezterm.nerdfonts.dev_python
-    icon_color = "#ffdd50"
-  elseif tab == "lua-language-server" then
+  elseif tab == "lua-language-server" then -- Lua
     title = "Neovim"
     icon = wezterm.nerdfonts.dev_lua
     icon_color = "#080884"

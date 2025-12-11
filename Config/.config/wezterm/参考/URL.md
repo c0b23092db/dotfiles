@@ -18,5 +18,3 @@ https://github.com/eetann/dotfiles
 
 - Weztermをセットアップしたい
 https://zenn.dev/ino4x/scraps/787dd3b2136d26
-
-

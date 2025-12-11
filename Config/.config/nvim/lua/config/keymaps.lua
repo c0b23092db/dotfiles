@@ -25,17 +25,23 @@ vim.keymap.set('n', 'P', 'P`]', { desc = 'Paste and move to the end' })
 -- [[ プラグインの影響 ]] --
 -- vim.keymap.set("i", "<CR>","\n", { expr = true, noremap = true, silent = true })
 
+--[[ Altキー ]] --
+vim.keymap.set("n", "<M-j>", "<Cmd>move .+1<CR>==")
+vim.keymap.set("x", "<M-j>", ":move '>+1<CR>gv=gv")
+vim.keymap.set("n", "<M-k>", "<Cmd>move .-2<CR>==")
+vim.keymap.set("x", "<M-k>", ":move '<-2<CR>gv=gv")
+
 --[[ コントロールキー・シフトキー ]] --
 
--- ノーマルモードで Ctrl + 矢印キーで単語間を移動
-vim.keymap.set("n", "<C-Left>", "b", { desc = "Move to previous word" })
-vim.keymap.set("n", "<C-Right>", "w", { desc = "Move to next word" })
+-- Save File
+vim.keymap.set({ "i", "x", "n", "s" }, "<C-s>", "<cmd>w<cr><esc>", { desc = "Save File" })
+
+-- Ctrl + 矢印キーで単語間を移動
+vim.keymap.set({"n","v"}, "<C-Left>", "b", { desc = "Move to previous word" })
+vim.keymap.set({"n","v"}, "<C-Right>", "w", { desc = "Move to next word" })
 -- 挿入モードで Ctrl + 矢印キーで単語間を移動
 vim.keymap.set("i", "<C-Left>", "<C-o>b", { desc = "Move to previous word in insert mode" })
 vim.keymap.set("i", "<C-Right>", "<C-o>w", { desc = "Move to next word in insert mode" })
--- ビジュアルモードで Ctrl + 矢印キーで単語間を移動
-vim.keymap.set("v", "<C-Left>", "b", { desc = "Move to previous word in visual mode" })
-vim.keymap.set("v", "<C-Right>", "w", { desc = "Move to next word in visual mode" })
 
 -- ノーマルモードで Shift + 矢印キーでコピーモード・単語間を移動
 vim.keymap.set("n", "<S-Left>", "vh", { desc = "Copy Mode and previous word" })
@@ -52,7 +58,7 @@ vim.keymap.set("i", "<C-z>", "<C-o>u", { noremap = true, silent = true }) -- 挿
 vim.keymap.set("v", "<C-c>", "y`]", { noremap = true, silent = true })
 
 -- Ctrl + vで貼り付け
--- vim.keymap.set("n", "<C-v>", "p`]", { noremap = true, silent = true })
+vim.keymap.set("n", "<C-v>", "p`]", { noremap = true, silent = true })
 vim.keymap.set("i", "<C-v>", "<esc>p`]a", { noremap = true, silent = true }) -- 挿入モード対応
 
 --[[ マウス操作 ]]--

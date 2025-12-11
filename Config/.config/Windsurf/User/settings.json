@@ -9,19 +9,20 @@
     "workbench.editor.closeOnFileDelete": true,
     "window.confirmSaveUntitledWorkspace": false,
     "telemetry.telemetryLevel": "error",
+    "extensions.ignoreRecommendations": true,
 
     // ターミナル 設定
     "terminal.integrated.defaultProfile.windows": "PowerShell",
     "terminal.integrated.suggest.enabled": true,
     "terminal.integrated.enableVisualBell": true,
     "terminal.integrated.stickyScroll.enabled": true,
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
 
     // Windsurf 画面 設定
     "window.zoomLevel": -1,
     "chat.commandCenter.enabled": false,
     "workbench.navigationControl.enabled": false,
     "workbench.colorTheme": "Default Dark Modern",
-    "workbench.iconTheme": "material-icon-theme",
     "workbench.colorCustomizations": {
         /* エディタ */
         "editor.background": "#1e1e20",
@@ -43,11 +44,11 @@
         "editorBracketPairGuide.activeBackground3":"#FFFFFF",
         "editorBracketPairGuide.activeBackground4":"#FFFFFF",
         "editorBracketPairGuide.activeBackground5":"#FFFFFF",
-        "editorBracketPairGuide.activeBackground6":"#FFFFFF",
+        "editorBracketPairGuide.activeBackground6":"#FFFFFF"
     },
 
     // フォント 設定
-    "editor.fontFamily":"'UDEV Gothic JPDOC', 'Cascadia Mono', Consolas, 'Courier New', monospace",
+    "editor.fontFamily":"'UDEV Gothic 35HSJPDOC', 'Cascadia Mono', Consolas, monospace, 'Noto Color Emoji', 'Symbols Nerd Font Mono'",
     "editor.fontSize":17,
     "debug.console.fontSize":16,
     "terminal.integrated.fontSize":16,
@@ -90,7 +91,7 @@
     // C 設定
     "[c]": {
         "editor.insertSpaces": false,
-        "editor.tabSize": 4,
+        "editor.tabSize": 4
     },
 
     // Python 設定
@@ -101,14 +102,14 @@
 
     // Rust 設定
     "[rust]": {
-        "editor.tabSize": 4,
+        "editor.tabSize": 4
     },
     "rust-analyzer.check.command": "clippy",
     "rust-analyzer.check.extraArgs": [
         "--",
         "-A",
         "clippy::needless_return",
-        "needless_return_with_question_mark",
+        "needless_return_with_question_mark"
     ],
 
     // Markdown 設定
@@ -146,7 +147,7 @@
         "MD041":false,
         "MD047":false,
         "MD049":false,
-        "MD050":false,
+        "MD050":false
     },
 
     // markdown-preview-enhanced 設定
@@ -154,9 +155,12 @@
     "markdown-preview-enhanced.previewTheme": "github-dark.css",
     "markdown-preview-enhanced.codeBlockTheme": "github-dark.css",
 
+    // Powershell 設定
+    "powershell.developer.editorServicesLogLevel": "None",
+
     // Godot 設定
     "godotTools.editorPath.godot4": "~\\Documents\\Software\\Godot_v4.5-stable_mono_win64\\Godot_v4.5-stable_mono_win64.exe",
-    "godotTools.lsp.serverPort": 6005,
+    "godotTools.lsp.serverPort": 6005
 
     // その他
 

@@ -1,4 +1,0 @@
-UniGetUI,MartiCliment.UniGetUI
-Powershell,Microsoft.PowerShell
-Windhawk,RamenSoftware.Windhawk
-mise,jdx.mise

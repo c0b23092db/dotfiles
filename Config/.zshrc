@@ -47,7 +47,7 @@ xterm*|rxvt*)
 esac
 
 ##### 環境変数 #####
-source $HOME/.env
+[ -f $HOME/.env ] && source $HOME/.env
 
 ##### eval #####
 eval "$(zoxide init zsh)"

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 source ./Setup/Bash/common.sh
-distribution=$(new_get_distribution)
+distribution=$(get_distribution)
 flag_copy=0
 
 if [[ flag_copy -eq 0 ]] ; then

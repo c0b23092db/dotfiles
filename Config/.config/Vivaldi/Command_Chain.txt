@@ -1,0 +1,8 @@
+- CopyTitle
+javascript:(()=>{const e=document.title,t=document.createElement("textarea");t.textContent=e,document.body.appendChild(t),t.select(),document.execCommand("copy"),document.body.removeChild(t),console.log(`Copyed this website title "${e}"`)})();if(history.replaceState){history.replaceState({},null,location.href);};
+
+- CopyURL
+javascript:(()=>{const e=`${location.href}`,t=document.createElement("textarea");t.textContent=e,document.body.appendChild(t),t.select(),document.execCommand("copy"),document.body.removeChild(t),console.log(`Copyed this website URL "${e}"`)})();if(history.replaceState){history.replaceState({},null,location.href);};
+
+- CopyTitleAndURL
+javascript:(()=>{const e=`${document.title}%20${location.href}`,t=document.createElement("textarea");t.textContent=e,document.body.appendChild(t),t.select(),document.execCommand("copy"),document.body.removeChild(t),console.log(`Copyed this website title and URL: ${e}`)})();if(history.replaceState){history.replaceState({},null,location.href);};

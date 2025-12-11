@@ -3,15 +3,19 @@
 ##### 初期化 #####
 clear
 source ./Setup/Bash/common.sh
-distribution=$(new_get_distribution)
+distribution=$(get_distribution)
 info "${BOLD}========== ${distribution} Dotfiles セットアップ =========="
 
-# セットアップ #
+# 事前セットアップ＃＃
 source ./Setup/Bash/Similar_Before.sh
+
+# セットアップ #
 source ./Setup/Bash/dotfile.sh
 source ./Setup/Bash/package.sh
 source ./Setup/Bash/procedure_package.sh
 source ./Setup/Bash/command.sh
+
+# 事後セットアップ #
 source ./Setup/Bash/Similar_After.sh
 
 info "${BOLD}========== ${distribution} Dotfiles セットアップ完了 =========="

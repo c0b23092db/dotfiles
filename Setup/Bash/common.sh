@@ -37,49 +37,9 @@ spinner ()  {
 }
 spinner_load() {
     bash -c "$2" > /dev/null 2>&1 & spinner "$1"
-    # eval "$2" > /dev/null 2>&1 & spinner "$1"
 }
 
-# 関数の定義 #
 get_distribution() {
-    local distri_name="Unknown"
-    if [ -e /etc/debian_version ] || [ -e /etc/debian_release ]; then
-        if [ -e /etc/lsb-release ]; then
-            distri_name="Ubuntu"
-        else
-            distri_name="Debian"
-        fi
-    elif [ -e /etc/redhat-release ]; then
-        if [ -e /etc/oracle-release ]; then
-            distri_name="Oracle"
-        else
-            distri_name="Red Hat"
-        fi
-    elif [ -e /etc/pop-os ]; then
-        distri_name="Pop!_OS"
-    elif [ -e /etc/fedora-release ]; then
-        distri_name="Fedora"
-    elif [ -e /etc/arch-release ]; then
-        distri_name="Arch"
-    elif [ -e /etc/nix-release ]; then
-        distri_name="Nix"
-    elif [ -e /etc/turbolinux-release ]; then
-        distri_name="Turbol"
-    elif [ -e /etc/SuSE-release ]; then
-        distri_name="SuSE"
-    elif [ -e /etc/mandriva-release ]; then
-        distri_name="Mandriva"
-    elif [ -e /etc/vine-release ]; then
-        distri_name="Vine"
-    elif [ -e /etc/gentoo-release ]; then
-        distri_name="Gentoo"
-    else
-        distri_name="Unknown"
-    fi
-    echo ${distri_name}
-}
-
-new_get_distribution() {
     local distri_name="Unknown"
     if [ -e /etc/os-release ]; then
         source /etc/os-release && distri_name=$NAME
@@ -92,8 +52,37 @@ new_get_distribution() {
         else
             distri_name="Debian"
         fi
+    elif [ -e /etc/redhat-release ]; then
+        if [ -e /etc/oracle-release ]; then
+            distri_name="Oracle"
+        else
+            distri_name="Red Hat"
+        fi
+    else
+        distri_name="Unknown"
     fi
     echo $distri_name
+}
+
+get_packagemanager() {
+    if command -v brew > /dev/null ; then # macOS
+        package_manager="brew"
+    elif command -v apt > /dev/null ; then   # Linux
+        package_manager="apt"
+    elif command -v pacman > /dev/null ; then # Arch
+        package_manager="pacman"
+    elif command -v dnf > /dev/null ; then # Fedora
+        package_manager="dnf"
+    elif command -v yum > /dev/null ; then # RedHat
+        package_manager="yum"
+    elif command -v zypper > /dev/null ; then # openSUSE
+        package_manager="zypper"
+    elif command -v dpkg > /dev/null ; then # Debian
+        package_manager="dpkg"
+    else
+        package_manager="Unknown"
+    fi
+    echo $package_manager
 }
 
 # mapfile -t parse_list < <(parse_txt ファイル名)

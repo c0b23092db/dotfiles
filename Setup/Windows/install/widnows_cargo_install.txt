@@ -1,0 +1,20 @@
+# mise・Rust #
+mise use -g rust
+
+// cargo package //
+
+// cargo package manager //
+cargo install --locked cargo-binstall
+cargo install --locked cargo-update
+
+// cargo binstall //
+cargo binstall -y cargo-about
+cargo binstall -y cargo-license
+cargo binstall -y cargo-generate
+cargo binstall -y diffx
+cargo binstall -y genact
+// Linux : cargo binstall -y sheldon
+
+// cargo my //
+cargo binstall -y download_mover
+cargo binstall -y Neiro

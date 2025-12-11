@@ -22,6 +22,16 @@
         "when": "!activeEditorGroupEmpty"
     },
     {
+        "key": "alt+a",
+        "command": "windsurf.prioritized.supercompleteAccept",
+        "when": "editorTextFocus && windsurf.richGhostTextShown && !editorHasMultilineSelection || editorTextFocus && windsurf.sideHintShown && !editorHasMultilineSelection || editorTextFocus && windsurf.tabActionShown && !editorHasMultilineSelection || editorTextFocus && inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHasMultilineSelection || editorTextFocus && inlineSuggestionVisible && neovim.init && !editorHasMultilineSelection && neovim.mode == 'normal' || editorTextFocus && inlineSuggestionVisible && vim.active && !editorHasMultilineSelection && vim.mode == 'Normal'"
+    },
+    {
+        "key": "tab",
+        "command": "-windsurf.prioritized.supercompleteAccept",
+        "when": "editorTextFocus && windsurf.richGhostTextShown && !editorHasMultilineSelection || editorTextFocus && windsurf.sideHintShown && !editorHasMultilineSelection || editorTextFocus && windsurf.tabActionShown && !editorHasMultilineSelection || editorTextFocus && inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHasMultilineSelection || editorTextFocus && inlineSuggestionVisible && neovim.init && !editorHasMultilineSelection && neovim.mode == 'normal' || editorTextFocus && inlineSuggestionVisible && vim.active && !editorHasMultilineSelection && vim.mode == 'Normal'"
+    },
+    {
         "key": "ctrl+shift+tab",
         "command": "-workbench.action.quickOpenLeastRecentlyUsedEditorInGroup",
         "when": "!activeEditorGroupEmpty"

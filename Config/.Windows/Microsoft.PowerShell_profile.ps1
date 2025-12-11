@@ -1,6 +1,10 @@
 Import-Module Terminal-Icons
 $WarningPreference = "SilentlyContinue" # Warningの非表示
 
+$PSDefaultParameterValues['*:Encoding'] = 'utf8'
+[Console]::InputEncoding = [System.Text.Encoding]::UTF8
+[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+
 Set-PSReadLineOption -PredictionViewStyle ListView
 Set-PSReadLineOption -PredictionSource HistoryAndPlugin
 Set-PSReadlineOption -HistoryNoDuplicates
@@ -15,7 +19,8 @@ function y {
     }
     Remove-Item -Path $tmp
 }
-function cl { cl.exe /source-charset:utf-8 @args}
+function cl { cl.exe /utf-8 @args}
+function javac { javac -encoding UTF-8 @args}
 function dcp { docker cp . $args[0]:/root/$args[1] }
 function za { zoxide add . }
 Invoke-Expression (& { (zoxide init powershell | Out-String) })
@@ -24,6 +29,7 @@ Set-Alias v nvim
 Set-Alias m micro
 Set-Alias e edit
 Set-Alias br broot
+Set-Alias touch New-Item
 Set-Alias open Start-Process
 
 function prompt {
