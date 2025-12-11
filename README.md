@@ -9,7 +9,7 @@
 
 ## ❄ うぇるかむ ❄
 
-![Wezterm_and_Windows](./Resource/github/window_windows.png)
+![Wezterm_and_Windows](./Resource/GitHub/window_windows.png)
 
 ## ☐️ TODO ☑
 - [x] Windowsのインストーラーを完成させる
