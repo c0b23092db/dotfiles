@@ -81,7 +81,7 @@ Write-Host
 # ============================================
 # インストール対象アプリケーション定義
 # ============================================
-$applications_id = .\Setup\Windows\script\File-Load.ps1 -FilePath ".\Package\WinGet-All.md"
+$applications_id = .\Setup\Windows\File-Load.ps1 -FilePath ".\Package\WinGet-All.md"
 if($applications_id -eq $null){
     exit 1
 }

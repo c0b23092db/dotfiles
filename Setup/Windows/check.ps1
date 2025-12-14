@@ -1,7 +1,7 @@
 # ============================================
 # ファイルのロード
 # ============================================
-$commandList = .\Setup\Windows\script\File-Load.ps1 -FilePath ".\Setup\Windows\install\yazi_pkg_add.txt"
+$commandList = .\Setup\Windows\File-Load.ps1 -FilePath ".\Setup\Windows\command\yazi_pkg_add.txt"
 if($commandList -eq $null){
     exit 1
 }

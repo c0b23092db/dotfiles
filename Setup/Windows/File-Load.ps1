@@ -30,7 +30,7 @@ foreach ($line in $lines) {
 
 return $TextList
 
-# $TextList = .\Setup\Windows\script\File-Load.ps1 -FilePath "file.txt"
+# $TextList = .\Setup\Windows\File-Load.ps1 -FilePath "file.txt"
 # foreach ($text in $TextList) {
 #     Write-Host $text
 # }

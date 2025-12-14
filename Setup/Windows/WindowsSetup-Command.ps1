@@ -20,7 +20,7 @@ try { # ya pkg add #
     $Version = ya --version 2>&1
     if ($LASTEXITCODE -eq 0) {
         Write-Host "ya バージョン: $Version" -ForegroundColor Green
-        .\Setup\Windows\script\Command-Run.ps1 -FilePath ".\Setup\Windows\install\yazi_pkg_add.txt"
+        .\Setup\Windows\Command-Run.ps1 -FilePath ".\Setup\Windows\command\yazi_pkg_add.txt"
     } else {
         Write-Host "ya がインストールされていません。" -ForegroundColor Yellow
         Write-Host "winget で ya をインストールしてください: winget install -e --id sxyazi.yazi" -ForegroundColor Yellow
@@ -34,7 +34,7 @@ try { # mise use #
     $Version = mise --version 2>&1
     if ($LASTEXITCODE -eq 0) {
         Write-Host "mise バージョン: $Version" -ForegroundColor Green
-        .\Setup\Windows\script\Command-Run.ps1 -FilePath ".\Setup\Windows\install\mise_use.txt"
+        .\Setup\Windows\Command-Run.ps1 -FilePath ".\Setup\Windows\command\mise_use.txt"
     } else {
         Write-Host "mise がインストールされていません。" -ForegroundColor Yellow
         Write-Host "winget で mise をインストールしてください: winget install -e --id jdx.mise" -ForegroundColor Yellow
@@ -48,7 +48,7 @@ try { # cargo install #
     $Version = cargo --version 2>&1
     if ($LASTEXITCODE -eq 0) {
         Write-Host "cargo バージョン: $Version" -ForegroundColor Green
-        .\Setup\Windows\script\Command-Run.ps1 -FilePath -FilePath ".\Setup\Windows\install\widnows_cargo_install.txt"
+        .\Setup\Windows\Command-Run.ps1 -FilePath -FilePath ".\Setup\Windows\command\widnows_cargo_install.txt"
     } else {
         Write-Host "cargo がインストールされていません。" -ForegroundColor Yellow
         Write-Host "mise で Rust をインストールしてください: mise use -g rust" -ForegroundColor Yellow

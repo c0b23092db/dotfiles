@@ -18,7 +18,7 @@ Write-Host
 # ============================================
 # ファイルのロード
 # ============================================
-$commandList = .\Setup\Windows\script\File-Load.ps1 -FilePath $FilePath
+$commandList = .\Setup\Windows\File-Load.ps1 -FilePath $FilePath
 if($commandList -eq $null){
     exit 1
 }
