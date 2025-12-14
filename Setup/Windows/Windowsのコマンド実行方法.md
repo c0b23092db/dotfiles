@@ -1,3 +1,8 @@
+# Windowsをインストールしたときに行うこと
+
+## Powershellで実行するコマンド
+必ず**ダウンロードフォルダーにドットファイルフォルダーを設置する**こと！
+
 cd $Env:USERPROFILE\Downloads\dotfiles
 Set-ExecutionPolicy RemoteSigned
 [Console]::InputEncoding = [System.Text.Encoding]::GetEncoding('utf-8')
