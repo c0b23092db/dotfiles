@@ -1,0 +1,31 @@
+theme = "night_owl"
+
+[editor]
+true-color = true
+auto-save = false
+shell = ["pwsh.exe", "-NoProfile", "-NoLogo", "-NoExit"]
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+[editor.whitespace.render]
+space = "all"
+tab = "all"
+nbsp = "none"
+nnbsp = "none"
+newline = "none"
+[editor.whitespace.characters]
+space = "-"
+tab = "▎"
+[editor.statusline]
+left = ["mode", "spinner", "file-name", "read-only-indicator", "file-modification-indicator"]
+right = ["diagnostics", "selections", "register", "position", "file-encoding", "file-line-ending"]
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+[editor.lsp]
+display-inlay-hints = true
+
+# キーマッピング #
+[keys.normal]
+C-s = ":w"

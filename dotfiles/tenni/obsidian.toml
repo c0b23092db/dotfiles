@@ -1,0 +1,8 @@
+no_global = false
+
+[markdown]
+match_mode = "glob"
+from = "~/Downloads"
+to = "~/Documents/Projects_Obsidian/0_Inbox"
+pattern = ["*.md"]
+

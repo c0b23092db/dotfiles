@@ -1,0 +1,61 @@
+# garou のキーマップ
+#
+# 既定値はこのファイルそのもの（バイナリに埋め込まれる）。
+# 変更するには ~/.config/garou/keymap.toml に変えたい動作だけを書く。
+# 書いた動作は既定のキーを置き換え、書かなかった動作は既定のまま。
+#
+# キー表記:
+#   1文字 ("q", "G", "+") または名前 (esc, enter, tab, space, left, right, up, down,
+#   home, end, pageup, pagedown, backspace, delete, f1〜f12)。
+#   前に ctrl+ / alt+ / shift+ を付けられる ("shift+g" は "G" と同じ)。
+#
+# マウス操作（変更不可）:
+#   画像上でホイール      カーソル位置を中心に拡大縮小
+#   画像上で左ドラッグ    画像を動かす（パン）
+#   サイドバーで左クリック ファイル選択 / フォルダ開閉
+#   サイドバーでホイール  カーソル移動
+
+# ---- 全般 ----
+quit = ["q", "esc"]                # 終了
+open = ["o", "O"]                  # 既定のアプリで開く
+refresh_image = ["r"]              # 画像を再転送
+refresh_screen = ["R"]             # 画面全体を再描画
+toggle_sidebar = ["alt+s", "alt+S"]   # サイドバー表示切替
+toggle_statusbar = ["alt+d", "alt+D"] # ステータスバー表示切替
+toggle_header = ["alt+f", "alt+F"]    # ヘッダー表示切替
+toggle_overlay = ["tab"]           # 画像情報オーバーレイ表示切替
+
+# ---- 移動 ----
+# サイドバー表示中: prev / next はフォルダを閉じる / 開く
+# サイドバー非表示: 前 / 次の画像（端で反対側へ回る）
+prev = ["h", "left"]
+next = ["l", "right"]
+up = ["k", "up"]                   # サイドバーのカーソルを上へ（表示中のみ）
+down = ["j", "down"]               # サイドバーのカーソルを下へ（表示中のみ）
+page_up = ["ctrl+b"]               # 1ページ上へ
+page_down = ["ctrl+f"]             # 1ページ下へ
+first = ["g"]                      # 先頭へ
+last = ["G"]                       # 末尾へ
+toggle_dir = ["enter"]             # フォルダ開閉（サイドバー表示中のみ）
+
+# ---- ズーム・パン ----
+# 転送済み画像の配置を変えるだけなので、再デコード・再転送はしない
+zoom_in = ["+", "="]               # 拡大
+zoom_out = ["-"]                   # 縮小
+zoom_fit = ["0"]                   # 画面に合わせる
+pan_left = ["H"]                   # 表示範囲を左へ（拡大中）
+pan_right = ["L"]                  # 表示範囲を右へ（拡大中）
+pan_up = ["K"]                     # 表示範囲を上へ（拡大中）
+pan_down = ["J"]                   # 表示範囲を下へ（拡大中）
+
+# ---- 並べ替え（大文字は降順） ----
+sort_natural = ["n"]               # 名前（自然順: 1, 2, 10）
+sort_natural_desc = ["N"]
+sort_modified = ["m"]              # 更新日時
+sort_modified_desc = ["M"]
+sort_size = ["s"]                  # ファイルサイズ
+sort_size_desc = ["S"]
+
+# ---- ファイル操作 ----
+delete = ["d"]                     # ごみ箱へ移動（y で確定）
+rename = ["f2"]                    # 名前を変更（Enter で確定 / Esc で取消）

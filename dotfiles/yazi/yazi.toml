@@ -1,0 +1,41 @@
+[mgr]
+sort_by = "natural"
+show_hidden = true
+sort_dir_first = true
+
+[preview]
+image_delay = 25
+image_quality = 50
+image_filter = "triangle"
+
+[opener]
+edit = [
+  { run = '${EDITOR:-nvim} %s', desc = "$EDITOR", block = true, for = "unix" },
+  { run = 'nvim %s', desc = "nvim", block = true },
+  { run = 'edit %s', desc = "edit", block = true, for = "windows" },
+  { run = 'zed %s', desc = "zed", orphan = true },
+  { run = 'code %s', desc = "code", orphan = true, for = "windows" },
+]
+play-image = [
+  { run = 'siv %s', desc = "siv", block = true},
+]
+play-audio = [
+  { run = 'sap -i %s', desc = "sap", block = true},
+]
+play-video = [
+  { run = 'mpv --force-window %s', desc = "mpv", orphan = true},
+]
+
+[open]
+prepend_rules = [
+  { mime = "text/*", use = [ "edit", "open", "reveal" ] },
+	{ mime = "image/*", use = [ "play-image", "play", "reveal" ] },
+	{ mime = "audio/*", use = [ "play-audio", "play", "reveal" ] },
+  { mime = "video/*", use = [ "play-video", "play", "reveal" ] },
+]
+
+[plugin]
+prepend_previewers = [
+  { mime = "audio/*",   run = "exifaudio"}
+]
+

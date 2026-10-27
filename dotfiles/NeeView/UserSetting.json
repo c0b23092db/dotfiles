@@ -1,0 +1,89 @@
+{
+  "Format": "NeeView/46.3.4312",
+  "Config": {
+    "System": {
+      "Language": "ja",
+      "IsRemoveConfirmed": false,
+      "StringComparerType": "Natural",
+      "SearchHistorySize": 5
+    },
+    "Image": {
+      "Standard": {
+        "SupportFileTypesExcept": ".webp"
+      }
+    },
+    "Archive": {
+      "SevenZip": {
+        "SupportFileTypes": ".7z;.cb7;.cbr;.cbz;.lzh;.rar;.zip"
+      }
+    },
+    "History": {
+      "LimitSize": 1000,
+      "LimitSpan": "30.00:00:00"
+    },
+    "Window": {
+      "WindowPlacement": "Normal,167,51,1440,830"
+    },
+    "WindowTitle": {},
+    "PageTitle": {},
+    "Panels": {
+      "Layout": {
+        "Docks": {
+          "Left": {
+            "PanelLayoutV2": [
+              "Vertical:FolderPanel",
+              "Vertical:PageListPanel",
+              "Vertical:HistoryPanel"
+            ],
+            "SelectedItem": "FolderPanel"
+          },
+          "Right": {
+            "PanelLayoutV2": [
+              "Vertical:FileInformationPanel",
+              "Vertical:NavigatePanel",
+              "Vertical:ImageEffectPanel",
+              "Vertical:BookmarkPanel",
+              "Vertical:PlaylistPanel"
+            ]
+          }
+        }
+      }
+    },
+    "Thumbnail": {
+      "CacheLimitSpan": "30.00:00:00"
+    },
+    "SlideShow": {
+      "TimerResetGesture": "MouseMove",
+      "PageEndAction": "None"
+    },
+    "EffectProfiles": {
+      "Profiles": [
+        {
+          "ImageEffect": {
+            "Layers": [
+              {
+                "Effect": {
+                  "$type": "Level"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "ImageEffectCache": [
+      {
+        "$type": "ColorSelect",
+        "Hue": 0,
+        "Curve": 1
+      }
+    ],
+    "Loupe": {
+      "MinimumScale": 2
+    },
+    "BookSetting": {
+      "SortMode": "FileName"
+    },
+    "WindowTittle": {}
+  }
+}

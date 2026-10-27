@@ -1,0 +1,29 @@
+comment = ["//","#","--"]
+exclude = ["md"]
+
+[TODO]
+mark = "✅"
+checkbox = true
+
+[TEMP]
+update = false
+
+[INFO]
+mark = "📒"
+alias = ["NOTE","MEMO"]
+
+[BUG]
+mark = "🔥"
+alias = ["FIX", "ISSUE"]
+
+[WARNING]
+mark = "⚠️"
+alias = ["WARN"]
+
+[AI]
+mark = "💻"
+
+[XXX]
+enabled = false
+mark = "？"
+

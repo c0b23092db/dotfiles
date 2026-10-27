@@ -1,0 +1,28 @@
+[command.game]
+auto_create = true
+date_format = "onefile"
+not_format = true
+file = "GameBox.md"
+tags = ["game"]
+insert = "## Game"
+
+[command.steam]
+override = "game"
+tags = ["game","steam"]
+insert = "## Steam"
+
+[command.stove]
+override = "game"
+tags = ["game","stove"]
+insert = "## Stove"
+
+[command.epic]
+override = "game"
+tags = ["game","epic"]
+insert = "## Epic"
+
+[command.unityroom]
+override = "game"
+tags = ["game","unityroom"]
+insert = "## unityroom"
+

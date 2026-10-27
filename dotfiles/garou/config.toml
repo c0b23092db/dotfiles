@@ -1,0 +1,15 @@
+[image]
+diff_mode = "All"
+transport_mode = "file"
+filter_type = "CatmullRom"
+
+[display]
+header = true
+sidebar = false
+statusbar = false
+sidebar_size = 20
+preview_debounce = 50
+
+[cache]
+lru_size = 5
+prefetch_size = 1

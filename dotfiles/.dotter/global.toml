@@ -1,0 +1,42 @@
+[helpers]
+
+[settings]
+default_target_type = "automatic"
+
+[default]
+depends = []
+
+[default.files]
+mise = "~/.config/mise"
+git = "~/.config/git"
+lsd = "~/.config/lsd"
+vlc = {target = "~/.config/vlc",type = "symbolic"}
+glow = "~/AppData/Local/glow/Config"
+micro = "~/.config/micro"
+qwato = "~/.config/qwato"
+garou = "~/.config/garou"
+suppa = "~/.config/suppa"
+tenni = "~/.config/tenni"
+marimo = "~/.config/marimo"
+wezterm = "~/.config/wezterm"
+
+[windows.files]
+jj = {target = "~/AppData/Roaming/jj",type = "symbolic"}
+mpv = {target = "~/AppData/Roaming/mpv",type = "symbolic"}
+nvim = {target = "~/AppData/Local/nvim",type = "symbolic"}
+helix = {target = "~/AppData/Roaming/helix",type = "symbolic"}
+yazi = "~/AppData/Roaming/yazi/config"
+Zed = "~/AppData/Roaming/Zed"
+Code = "~/AppData/Roaming/Code/User"
+NeeView = "~/AppData/Local/NeeLaboratory/NeeView"
+Powershell = "~/Documents/PowerShell"
+
+[unix.files]
+".env" = {target = "~/.env",type = "symbolic"}
+".profile" = {target = "~/.profile",type = "symbolic"}
+".bashrc" = {target = "~/.bashrc",type = "symbolic"}
+".bash_logout" = {target = "~/.bash_logout",type = "symbolic"}
+".bash_profile" = {target = "~/.bash_profile",type = "symbolic"}
+".bash_aliases" = {target = "~/.bash_aliases",type = "symbolic"}
+".zshrc" = {target = "~/.zshrc",type = "symbolic"}
+zsh = "~/.config/zsh"

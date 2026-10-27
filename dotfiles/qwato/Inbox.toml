@@ -1,0 +1,12 @@
+base_directory = "~/Documents/Projects_Obsidian"
+
+[command.inbox]
+auto_create = true
+date_format = "onefile"
+file = "Inbox.md"
+not_format = true
+
+[command.idea]
+override = "inbox"
+tags = ["idea"]
+

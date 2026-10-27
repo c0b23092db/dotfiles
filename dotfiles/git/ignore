@@ -1,0 +1,95 @@
+# Windows #
+Thumbs.db
+ehthumbs.db
+desktop.ini
+# WSL
+*Zone.Identifier
+# macOS #
+.DS_Store
+.AppleDouble
+.Spotlight-V100
+.Trashes
+# LLM #
+.agent/
+.agents/
+AGENTS.md
+.claude
+CLAUDE.md
+.mcp.json
+skills-lock.json
+README/引継ぎ/**
+# 環境変数 & 機密情報 #
+.env
+!.env.example
+*.secret
+*.key
+*.pem
+*.crt
+cookies.*
+todo.md
+
+# EDITOR/IDE #
+.zed/
+.vscode/
+# Logs & databases #
+log/
+*.log
+temp/
+*.tmp
+*.temp
+*.sql
+*.sqlite
+.gocache/
+.gomodcache/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+# Compiled #
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.pyo
+*.pyc
+bin/
+node_modules/
+sandbox/
+main/
+target/
+trash/
+# Packages #
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+# Search Index #
+.mikke/
+.mikke.toml*
+.codegraph/
+codegraph.json*
+
+# Generated files #
+._*
+*~
+*.bak
+*.swp
+*.swo
+.classpath
+.project
+.settings
+.idea
+.metadata
+*.iml
+*.ipr
+*.orig
+*.sublime-workspace
+*.msi 
+
+
+**/.claude/settings.local.json

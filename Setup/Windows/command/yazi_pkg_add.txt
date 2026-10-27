@@ -1,5 +1,0 @@
-# yazi plugins #
-ya pkg add yazi-rs/plugins:full-border
-ya pkg add yazi-rs/plugins:toggle-pane
-ya pkg add yazi-rs/plugins:smart-enter
-ya pkg add yazi-rs/plugins:smart-filter

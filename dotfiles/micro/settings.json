@@ -1,0 +1,13 @@
+{
+    "colorscheme": "monokai",
+    "eofnewline": false,
+    "hlsearch": true,
+    "scrollbar": true,
+    "scrollbarchar": " ",
+    "scrollmargin": 1,
+    "tabstospaces": true,
+    "tabsize": 4,
+    "ft:c": {
+        "tabstospaces": false
+    },
+}

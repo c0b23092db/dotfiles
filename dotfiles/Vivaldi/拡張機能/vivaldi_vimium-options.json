@@ -1,0 +1,46 @@
+{
+  "exclusionRules": [
+    {
+      "passKeys": "",
+      "pattern": "https://abema.tv/video/episode/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://pc-play.games.dmm.co.jp/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://paiza.jp/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://unityroom.com/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://www.youtube.com/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://www.notion.so/*"
+    },
+    {
+      "passKeys": "ABCDEGHIJKLMNOPQRSTUVWXYZabcdeghlmnopqrstuvwxyz1234567890!\"#$%&'()=~|-^\\`{@[+*};:]<>?_,./\\",
+      "pattern": "https://*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://erogemy.com/*"
+    }
+  ],
+  "grabBackFocus": true,
+  "hideUpdateNotifications": true,
+  "keyMappings": "# ABCDEGHIJKLMNOPQRSTUVWXYZabcdeghlmnopqrstuvwxyz1234567890!\"#$%&'()=~|-^\\`{@[+*};:]<>?_,./\\\n\nunmapAll\nmap i enterInsertMode\nmap j scrollDown\nmap k scrollUp\nmap f LinkHints.activateMode\nmap F LinkHints.activateModeToOpenInNewTab",
+  "newTabCustomUrl": "chrome://vivaldi-webui/startpage",
+  "nextPatterns": "next,more,newer,>,›,→,»,≫,>>,次へ,進む,次のページ",
+  "previousPatterns": "prev,previous,back,older,<,‹,←,«,≪,<<,前へ,戻る,前のページ",
+  "scrollStepSize": 50,
+  "searchEngines": "",
+  "settingsVersion": "2.4.2",
+  "userDefinedLinkHintCss": "div > .vimiumHintMarker {\n/* linkhint boxes */\nbackground: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFF785),\n  color-stop(100%,#FFC542));\n  border: 1px solid #E3BE23;\n}\n\ndiv > .vimiumHintMarker span {\n/* linkhint text */\n  color: black;\n  font-weight: bold;\n  font-size: 12px;\n}\n\ndiv > .vimiumHintMarker > .matchingCharacter {\n}"
+}

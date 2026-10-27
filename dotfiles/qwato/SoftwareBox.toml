@@ -1,0 +1,33 @@
+[command.software]
+auto_create = true
+date_format = "onefile"
+not_format = true
+file = "SoftwareBox.md"
+tags = ["software"]
+insert = "## Software"
+
+[command.cli]
+override = "software"
+tags = ["software","cli"]
+insert = "## CLI"
+
+[command.tui]
+override = "software"
+tags = ["software","tui"]
+insert = "## TUI"
+
+[command.gui]
+override = "software"
+tags = ["software","gui"]
+insert = "## GUI"
+
+[command.selfhost]
+override = "software"
+tags = ["software","selfhost"]
+insert = "## SelfHost"
+
+[command.webapp]
+override = "software"
+tags = ["software","webapp"]
+insert = "## WebApp"
+

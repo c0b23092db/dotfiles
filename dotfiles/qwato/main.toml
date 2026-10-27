@@ -1,0 +1,27 @@
+base_directory = "~/Documents/Projects_Obsidian"
+default_command = "daily"
+time_format = "%H:%M:%S"
+date_format = "line"
+
+[list]
+limit = 10
+
+[created]
+field = "created"
+format = "%Y-%m-%d %H:%M:%S"
+
+[modified]
+field = "modified"
+format = "%Y-%m-%d %H:%M:%S"
+
+[command.daily]
+auto_create = true
+template = "System/Template/daily.md"
+directory = "1_Daily"
+file = "%Y-%m-%d.md"
+insert = "## ジャーナル"
+
+[command.neovim]
+override = "daily"
+tags = ["neovim"]
+

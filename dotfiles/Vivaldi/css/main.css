@@ -1,0 +1,42 @@
+/* ブレイクモード解除ボタンを全体化 */
+/* https://forum.vivaldi.net/topic/91137/%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0css%E3%81%AE%E5%B0%8F%E3%83%8D%E3%82%BF/2 */
+#app:not(.dev) .break-mode button.HUD {
+  z-index: 64;
+  &:hover {color: var(--colorHighlightBg)}
+  &::after {
+    content: ''; background-color: transparent; position: absolute; cursor: pointer;
+    width: 100vw; height: 100vh; left: calc(100px - 50vw); top: calc(100px - 50vh); z-index: -1;
+  }
+}
+
+/* Vivaldiボタン */
+.vivaldi span {
+  transform: scale(1.1);
+  fill: #83ccd2;
+}
+.vivaldi .expand-arrow {
+  display: none;
+}
+#browser.menu-icon {
+  --menuWidth: 34px;
+}
+#browser.menu-icon .vivaldi {
+  grid-template-columns: 22px;
+}
+
+/* スタートページ */
+.startpage .startpage-navigation {
+  /*ナビゲーションバーを下部配置にする*/
+  /* https://www.naporitansushi.com/vivaldi-start-page-navigationbar-bottom-css */
+  order: 1;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+/* ステータスバー */
+#webview-container~.StatusInfo .StatusInfo-Content {
+  border: none;
+  border-radius: var(--radius);
+  background-color: var(--colorBgAlphaBlur);
+  backdrop-filter: var(--backgroundBlur);
+}

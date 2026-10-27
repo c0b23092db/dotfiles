@@ -1,69 +1,16 @@
 ##### all ignore #####
 /*
 /.**
-private*
+
 # 個人情報 #
-.aws
-.ssh
-.bash_history
-.zsh_history
 Log
-Resource/Font
-Resource/Icon
-Resource/Wallpaper
-Resource/MouseCursor
-Resource/Minecraft
-Resource/Installers
-Resource/Password
+resource
 
 ##### Git #####
 !LICENSE
 !README.md
 !.gitignore
-!Resource
 
-##### セットアップスクリプト #####
-!install.sh
-!Windows_Installer.ps1
-!Mac_Installer.sh
-!Setup
-
-# パッケージファイル #
-!Package
-
-##### 設定ファイル #####
-!Config
-Config/.Portable
-!init.lua
-!settings.json
-!bindings.json
-!keybindings.json
-!theme.toml
-!keymap.toml
-
-# ファイル #
-!.vimrc
-!.zshrc
-!.bashrc
-!.bash_profile
-!.bash_logout
-!Microsoft.PowerShell_profile.ps1
-
-##### 省くファイル #####
-
-# Visual Studio Code系
-globalStorage
-History
-workspaceStorage
-snippets
-# yazi
-plugins
-state
-package.toml
-!yazi.toml
-# micro
-backups
-buffers
-# NeeView
-History.json
-Cache.db
+#####
+!dotfiles
+dotfiles/.dotter/cache.toml

@@ -1,0 +1,27 @@
+[[plugin.deps]]
+use = "yazi-rs/plugins:smart-filter"
+rev = "6229767"
+hash = "d964a3fa1d8880d80adffab244844be5"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:toggle-pane"
+rev = "6229767"
+hash = "a0d570162ec1ae6e3945f547c3d784f9"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:smart-enter"
+rev = "6229767"
+hash = "e2502af5a8c03d4cb2ac06da6169609e"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:full-border"
+rev = "6229767"
+hash = "acf841be033b88195a008c65fd973883"
+
+[[plugin.deps]]
+use = "Sonico98/exifaudio"
+rev = "4506f9d"
+hash = "cdfe518db0bee0d2d03f36351b4de08d"
+
+[flavor]
+deps = []

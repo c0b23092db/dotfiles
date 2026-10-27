@@ -1,0 +1,119 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  //-- Other --//
+  "cli_default_open_behavior": "existing_window",
+  "edit_predictions": {
+    "ollama": {
+      "api_url": "http://localhost:11434"
+    },
+    "provider": "copilot",
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "session": {
+    "trust_all_worktrees": false,
+  },
+//-- UI --//
+  "show_whitespaces": "all",
+  "tab_bar": {
+    "show": true,
+    "show_nav_history_buttons": false,
+  },
+  "indent_guides": {
+    "enabled": true,
+    "coloring": "indent_aware",
+    "background_coloring": "disabled",
+  },
+  // Theme //
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "Night Owl No Italics",
+  },
+  "icon_theme": {
+    "mode": "system",
+    "light": "Material Icon Theme",
+    "dark": "Material Icon Theme",
+  },
+  "tabs": {
+    "file_icons": true,
+    "git_status": true,
+  },
+  // Font //
+  "ui_font_size": 14.0,
+  "ui_font_family": ".ZedMono",
+  "buffer_font_size": 14.0,
+  "buffer_font_fallbacks": ["UDEV Gothic 35NF", "Symbols Nerd Font Mono", "Noto Serif JP"],
+  "buffer_line_height": "comfortable",
+  "buffer_font_features": {
+    "liga": false,
+    "calt": false,
+  },
+  // Panels //
+  "project_panel": {
+    "dock": "left",
+  },
+  "outline_panel": {
+    "dock": "left",
+  },
+  "collaboration_panel": {
+    "button": false,
+    "dock": "left",
+  },
+  "agent": {
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "git_panel": {
+    "tree_view": false,
+    "dock": "left",
+  },
+  // Status Bar //
+  "status_bar": {
+    "active_language_button": true,
+    "cursor_position_button": true,
+    "line_endings_button": true,
+  },
+//-- Edit --//
+  // Editor //
+  "formatter": "none",
+  "base_keymap": "VSCode",
+  "semantic_tokens": "combined",
+  "ensure_final_newline_on_save": false,
+  "remove_trailing_whitespace_on_save": true,
+  "vim_mode": false,
+  "vim": {
+    "use_system_clipboard": "always",
+  },
+  // AI //
+  "disable_ai": false,
+  "show_edit_predictions": true,
+
+//-- Language --//
+  "file_types": {
+    "Python": ["py","rpy","rpym"],
+  },
+  "languages": {
+    "Python": {
+      "tab_size": 4,
+    },
+    "GDScript": {
+      "formatter": {
+        "external": {
+          "command": "gdscript-formatter",
+          "arguments": []
+        }
+      }
+    },
+  },
+}

@@ -1,0 +1,27 @@
+[mgr]
+prepend_keymap = [
+  # Change yazi #
+  { on = "q", run = "close", desc = "Close the current tab, or quit if it's last" },
+  { on = "<C-q>", run = "close --no-cwd-file", desc = "Close the current tab, or quit if it's last without outputting cwd-file" },
+  { on = "Q", run = "quit", desc = "Quit the process" },
+  { on = "<C-Q>", run = "quit --no-cwd-file", desc = "Quit without outputting cwd-file" },
+  { on = "t", run = "tab_create --current", desc = "Create a new tab in CWD" },
+  { on = "R", run = "tab_rename --interactive", desc = "Rename current tab" },
+  { on = "!", for = "windows", run = 'shell pwsh.exe --block', desc = "Open PowerShell 7 here" },
+
+  # Custom yazi #
+  { on = "<F2>", run = "rename --empty=stem --cursor=start", desc = "Rename selected file(s)" },
+  { on = [ "g", "m" ], run = "cd ~/music",   desc = "Go ~/music" },
+  { on = [ "g", "p" ], run = "cd ~/pictures",   desc = "Go ~/pictures" },
+  { on = [ "g", "v" ], run = "cd ~/videos",   desc = "Go ~/videos" },
+
+  # Default Plugin
+  { on = "z", run = "plugin zoxide", desc = "Jump to a directory via zoxide" },
+  { on = "Z", run = "plugin fzf",    desc = "Jump to a file/directory via fzf" },
+
+  # In Plugin #
+  { on = "<Enter>", run = "plugin smart-enter", desc = "Enter the child directory, or open the file" },
+  { on = "F", run = "plugin smart-filter", desc = "Smart Filter" },
+  { on = "T", run = "plugin toggle-pane min-preview", desc = "Show or hide the preview pane" },
+  { on = "T", run = "plugin toggle-pane max-preview", desc = "Maximize or restore the preview pane" },
+]
